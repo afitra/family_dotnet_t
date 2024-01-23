@@ -15,14 +15,17 @@ public class EmployeeUsecase : IEmployeeUsecase
     protected readonly IMapper _mapper;
     private readonly IEmployeeRepository _employeeRepository;
     private readonly IAbsenRepository _absenRepository;
+    private readonly IS3Repository _s3Repository;
 
 
-    public EmployeeUsecase(IMapper mapper, IEmployeeRepository employeeRepository, IAbsenRepository absenRepository)
+    public EmployeeUsecase(IMapper mapper, IEmployeeRepository employeeRepository, IAbsenRepository absenRepository,
+        IS3Repository s3Repository)
     {
         _source = GetType().Name;
         _mapper = mapper;
         _employeeRepository = employeeRepository;
         _absenRepository = absenRepository;
+        _s3Repository = s3Repository;
     }
 
     public async Task<object> RegisterEmployeeStoreProcedureAsync(RegisterEmployeeRequest request)
@@ -118,5 +121,30 @@ public class EmployeeUsecase : IEmployeeUsecase
 
 
         return new { rekap };
+    }
+
+    public async Task<object> UploadProfileAsync(string nik, UploadProfileRequest request)
+    {
+        using (var memoryStream = new MemoryStream())
+        {
+            await request.File.CopyToAsync(memoryStream);
+            memoryStream.Position = 0;
+
+            var fileName = $"{Guid.NewGuid()}_{request.File.FileName}";
+
+            var uploadS3Data = new UploadS3Data
+            {
+                FileStream = memoryStream,
+                FileName = Helper.GenerateRandomString("PP", 8),
+                AccesKey = BasicConfiguration.GetVariableGlobal("S3_ACCESS_KEY"),
+                SecretKey = BasicConfiguration.GetVariableGlobal("S3_SECRET_KEY"),
+                ServiceUrl = BasicConfiguration.GetVariableGlobal("S3_URL"),
+                BucketName = BasicConfiguration.GetVariableGlobal("S3_BUCKET_NAME")
+            };
+            var fileUrl = await _s3Repository.UploadPhotoToS3(uploadS3Data);
+            await _employeeRepository.UpdateProfileUrlByNikAsync(nik, fileUrl);
+
+            return new { fileUrl };
+        }
     }
 }

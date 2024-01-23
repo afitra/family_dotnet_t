@@ -71,3 +71,7 @@
 /Users/amb/Documents/code/loker/familyMart/obj/Debug/net6.0/ref/familyMart.dll
 /Users/amb/Documents/code/loker/familyMart/bin/Debug/net6.0/NetTopologySuite.dll
 /Users/amb/Documents/code/loker/familyMart/bin/Debug/net6.0/Swashbuckle.AspNetCore.Annotations.dll
+/Users/amb/Documents/code/loker/familyMart/bin/Debug/net6.0/AWSSDK.Core.dll
+/Users/amb/Documents/code/loker/familyMart/bin/Debug/net6.0/AWSSDK.S3.dll
+/Users/amb/Documents/code/loker/familyMart/bin/Debug/net6.0/Microsoft.Extensions.Http.dll
+/Users/amb/Documents/code/loker/familyMart/bin/Debug/net6.0/AWSSDK.Extensions.NETCore.Setup.dll

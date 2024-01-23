@@ -96,4 +96,15 @@ public class EmployeeController : BasicController
             return SetErrorResponse(e);
         }
     }
+
+
+    [HttpPost("upload/profile")]
+    [MiddlewareFilter(typeof(JwtAuthenticationMiddleware))]
+    public async Task<IActionResult> UploadPhoto([FromForm] UploadProfileRequest request)
+    {
+        var nikClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == "Nik")?.Value;
+        var data = await _employeeUsecase.UploadProfileAsync(nikClaim, request);
+        return SetResponse(StatusCodes.Status200OK, BasicCode.GeneralCode, true, BasicMessage.DataAddedMessage,
+            data);
+    }
 }

@@ -7,4 +7,5 @@ public class Employee
     public string Nik { get; set; }
     public string Email { get; set; }
     public string Password { get; set; }
+    public string ProfileUrl { get; set; }
 }

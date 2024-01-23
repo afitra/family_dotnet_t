@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using Amazon.S3;
+using Amazon.Extensions.NETCore.Setup;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -90,6 +92,7 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IEmployeeUsecase, EmployeeUsecase>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IAbsenRepository, AbsenRepository>();
+builder.Services.AddScoped<IS3Repository, S3Repository>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -110,7 +113,7 @@ app.UseHttpsRedirection();
 
 
 // start add config auto logger request - response
-app.UseMiddleware<LoggingMiddleware>();
+// app.UseMiddleware<LoggingMiddleware>();
 // end add config auto logger request - response
 
 app.UseCors(options =>

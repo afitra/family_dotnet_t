@@ -7,11 +7,12 @@
 -- Tabel Employee
 CREATE TABLE "Employees"
 (
-    "Id"       SERIAL PRIMARY KEY,
-    "Nama"     VARCHAR(255) NOT NULL,
-    "Nik"      VARCHAR(20)  NOT NULL UNIQUE,
-    "Email"    VARCHAR(255) NOT NULL UNIQUE,
-    "Password" VARCHAR(255) NOT NULL
+    "Id"          SERIAL PRIMARY KEY,
+    "Nama"        VARCHAR(255) NOT NULL,
+    "Nik"         VARCHAR(20)  NOT NULL UNIQUE,
+    "Email"       VARCHAR(255) NOT NULL UNIQUE,
+    "Password"    VARCHAR(255) NOT NULL,
+    "Profile_url" VARCHAR(255)
 );
 
 -- Tabel Absen dengan Geotagging bertipe data geometry

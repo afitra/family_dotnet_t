@@ -75,4 +75,11 @@ public class EmployeeRepository : IEmployeeRepository
 
         await _dbContext.Database.ExecuteSqlRawAsync(query, parameters);
     }
+
+    public async Task UpdateProfileUrlByNikAsync(string nik, string profileUrl)
+    {
+        await _dbContext.Database.ExecuteSqlRawAsync(
+            $"UPDATE \"Employees\" SET \"Profile_url\" = {{0}} WHERE \"Nik\" = {{1}}",
+            profileUrl, nik);
+    }
 }

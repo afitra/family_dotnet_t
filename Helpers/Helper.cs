@@ -180,4 +180,23 @@ public class Helper
 
         return nikBuilder.ToString();
     }
+
+    public static string GenerateRandomString(string prefix, int length)
+    {
+        const string allowedChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        StringBuilder stringBuilder = new StringBuilder();
+
+        // Tambahkan prefix
+        stringBuilder.Append(prefix);
+
+        // Tambahkan karakter acak
+        Random random = new Random();
+        for (int i = prefix.Length; i < length; i++)
+        {
+            int randomIndex = random.Next(0, allowedChars.Length);
+            stringBuilder.Append(allowedChars[randomIndex]);
+        }
+
+        return stringBuilder.ToString();
+    }
 }

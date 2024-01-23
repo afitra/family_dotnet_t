@@ -12464,3 +12464,625 @@ Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Da
 2024-01-23 15:58:21.060 +07:00 [INF] Hosting environment: Development
 2024-01-23 15:58:21.060 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
 2024-01-23 16:02:41.040 +07:00 [INF] Application is shutting down...
+2024-01-23 17:17:27.209 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 17:17:27.442 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 17:17:27.442 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 17:17:27.446 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 17:17:27.446 +07:00 [INF] Hosting environment: Development
+2024-01-23 17:17:27.446 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 17:20:58.634 +07:00 [INF] Application is shutting down...
+2024-01-23 17:21:25.923 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 17:21:26.151 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 17:21:26.151 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 17:21:26.155 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 17:21:26.155 +07:00 [INF] Hosting environment: Development
+2024-01-23 17:21:26.156 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 17:21:48.797 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 17:21:49.072 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 281.1639ms
+2024-01-23 17:21:49.106 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-bundle.js - -
+2024-01-23 17:21:49.116 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-standalone-preset.js - -
+2024-01-23 17:21:49.165 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-01-23 17:21:49.165 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-standalone-preset.js - - - 200 332754 application/javascript 49.3830ms
+2024-01-23 17:21:49.166 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 17:21:49.169 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.8131ms
+2024-01-23 17:21:49.170 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-01-23 17:21:49.174 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-bundle.js - - - 200 1056524 application/javascript 67.8184ms
+2024-01-23 17:21:49.187 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-standalone-preset.js - -
+2024-01-23 17:21:49.189 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-01-23 17:21:49.190 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-standalone-preset.js - - - 200 332754 application/javascript 2.7610ms
+2024-01-23 17:21:49.193 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-bundle.js - -
+2024-01-23 17:21:49.201 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-01-23 17:21:49.201 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-bundle.js - - - 200 1056524 application/javascript 7.8398ms
+2024-01-23 17:21:49.207 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 17:21:49.207 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.4807ms
+2024-01-23 17:21:49.351 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 17:21:49.488 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.9012ms
+2024-01-23 17:28:59.986 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 17:28:59.991 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 4.8520ms
+2024-01-23 17:29:00.025 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 17:29:00.025 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.6254ms
+2024-01-23 17:29:00.081 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 17:29:00.081 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.4463ms
+2024-01-23 17:29:00.284 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 17:29:00.295 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.8454ms
+2024-01-23 17:29:01.819 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/[object Module] - -
+2024-01-23 17:29:02.044 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"669db9df-c78f-4d76-8e28-d88e72736105","method":"GET","url":"/swagger/%5Bobject%20Module%5D","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T10:29:01.886Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Referer":"https://localhost:7134/swagger/index.html","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"no-cors","Sec-Fetch-Dest":"image"}
+
+Request Body -=> null
+
+=== Request Information End ===
+
+2024-01-23 17:29:02.046 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"669db9df-c78f-4d76-8e28-d88e72736105","method":"GET","url":"/swagger/%5Bobject%20Module%5D","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T10:29:02.045Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Referer":"https://localhost:7134/swagger/index.html","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"no-cors","Sec-Fetch-Dest":"image"}
+
+Response Body -=> null
+
+=== Response Information End ===
+
+2024-01-23 17:29:02.046 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/[object Module] - - - 404 0 - 227.0084ms
+2024-01-23 17:29:09.524 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile - 0
+2024-01-23 17:29:09.525 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"cadce539-241c-455d-a7e9-23bc1fa3f0e6","method":"POST","url":"/api/Employee/upload/profile","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T10:29:09.525Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"0","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Request Body -=> null
+
+=== Request Information End ===
+
+2024-01-23 17:29:09.537 +07:00 [INF] CORS policy execution successful.
+2024-01-23 17:29:09.541 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:29:09.581 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:29:09.611 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 23.3676ms
+2024-01-23 17:29:09.614 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:29:09.648 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"cadce539-241c-455d-a7e9-23bc1fa3f0e6","method":"POST","url":"/api/Employee/upload/profile","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T10:29:09.615Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"0","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Response Body -=> {"code":"401","status":false,"title":"Unauthorized","message":"Token is missing or invalid.","data":null}
+
+=== Response Information End ===
+
+2024-01-23 17:29:09.649 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile - 0 - 401 - application/json;+charset=utf-8 124.6003ms
+2024-01-23 17:30:15.273 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/[object Module] - -
+2024-01-23 17:30:15.274 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"75d9717b-84ff-46bf-bf07-26c0b5009b62","method":"GET","url":"/swagger/%5Bobject%20Module%5D","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T10:30:15.273Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Referer":"https://localhost:7134/swagger/index.html","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"no-cors","Sec-Fetch-Dest":"image"}
+
+Request Body -=> null
+
+=== Request Information End ===
+
+2024-01-23 17:30:15.274 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"75d9717b-84ff-46bf-bf07-26c0b5009b62","method":"GET","url":"/swagger/%5Bobject%20Module%5D","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T10:30:15.274Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Referer":"https://localhost:7134/swagger/index.html","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"no-cors","Sec-Fetch-Dest":"image"}
+
+Response Body -=> null
+
+=== Response Information End ===
+
+2024-01-23 17:30:15.274 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/[object Module] - - - 404 0 - 1.7163ms
+2024-01-23 17:30:51.774 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundarynwNLzx6Vc7IlYDOK 19066
+2024-01-23 17:30:51.784 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing number: W. Path '', line 1, position 6.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberCharIntoBuffer(Char currentChar, Int32 charPos)
+   at Newtonsoft.Json.JsonTextReader.ReadNumberIntoBuffer()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value)
+   at familyMart.Master.LoggingMiddleware.createLogger(String message, HttpContext context, String contentBody) in /Users/amb/Documents/code/loker/familyMart/Master/LoggingMiddleware.cs:line 90
+   at familyMart.Master.LoggingMiddleware.LogRequest(HttpContext context) in /Users/amb/Documents/code/loker/familyMart/Master/LoggingMiddleware.cs:line 39
+   at familyMart.Master.LoggingMiddleware.Invoke(HttpContext context) in /Users/amb/Documents/code/loker/familyMart/Master/LoggingMiddleware.cs:line 20
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-23 17:30:51.808 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundarynwNLzx6Vc7IlYDOK 19066 - 500 - text/plain;+charset=utf-8 34.2333ms
+2024-01-23 17:33:37.559 +07:00 [INF] Application is shutting down...
+2024-01-23 17:33:47.671 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 17:33:47.896 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 17:33:47.896 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 17:33:47.900 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 17:33:47.900 +07:00 [INF] Hosting environment: Development
+2024-01-23 17:33:47.900 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 17:33:52.554 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundaryWspAmk4PMiku62rN 19066
+2024-01-23 17:33:52.823 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing number: W. Path '', line 1, position 6.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberCharIntoBuffer(Char currentChar, Int32 charPos)
+   at Newtonsoft.Json.JsonTextReader.ReadNumberIntoBuffer()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value)
+   at familyMart.Master.LoggingMiddleware.createLogger(String message, HttpContext context, String contentBody) in /Users/amb/Documents/code/loker/familyMart/Master/LoggingMiddleware.cs:line 90
+   at familyMart.Master.LoggingMiddleware.LogRequest(HttpContext context) in /Users/amb/Documents/code/loker/familyMart/Master/LoggingMiddleware.cs:line 39
+   at familyMart.Master.LoggingMiddleware.Invoke(HttpContext context) in /Users/amb/Documents/code/loker/familyMart/Master/LoggingMiddleware.cs:line 20
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-23 17:33:52.848 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundaryWspAmk4PMiku62rN 19066 - 500 - text/plain;+charset=utf-8 299.6511ms
+2024-01-23 17:34:36.787 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundarywFYXzBDSd6A53aXg 19066
+2024-01-23 17:34:36.789 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing number: W. Path '', line 1, position 6.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberCharIntoBuffer(Char currentChar, Int32 charPos)
+   at Newtonsoft.Json.JsonTextReader.ReadNumberIntoBuffer()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value)
+   at familyMart.Master.LoggingMiddleware.createLogger(String message, HttpContext context, String contentBody)
+   at familyMart.Master.LoggingMiddleware.LogRequest(HttpContext context)
+   at familyMart.Master.LoggingMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-23 17:34:36.791 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundarywFYXzBDSd6A53aXg 19066 - 500 - text/plain;+charset=utf-8 4.7105ms
+2024-01-23 17:35:03.738 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundaryomdXB7Z9DfAFgjja 19066
+2024-01-23 17:35:03.740 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing number: W. Path '', line 1, position 6.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberCharIntoBuffer(Char currentChar, Int32 charPos)
+   at Newtonsoft.Json.JsonTextReader.ReadNumberIntoBuffer()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value)
+   at familyMart.Master.LoggingMiddleware.createLogger(String message, HttpContext context, String contentBody)
+   at familyMart.Master.LoggingMiddleware.LogRequest(HttpContext context)
+   at familyMart.Master.LoggingMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-23 17:35:03.741 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundaryomdXB7Z9DfAFgjja 19066 - 500 - text/plain;+charset=utf-8 3.7225ms
+2024-01-23 17:35:04.825 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundaryreS9IWceND9pVJZi 19066
+2024-01-23 17:35:04.828 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing number: W. Path '', line 1, position 6.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberCharIntoBuffer(Char currentChar, Int32 charPos)
+   at Newtonsoft.Json.JsonTextReader.ReadNumberIntoBuffer()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value)
+   at familyMart.Master.LoggingMiddleware.createLogger(String message, HttpContext context, String contentBody)
+   at familyMart.Master.LoggingMiddleware.LogRequest(HttpContext context)
+   at familyMart.Master.LoggingMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-23 17:35:04.829 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundaryreS9IWceND9pVJZi 19066 - 500 - text/plain;+charset=utf-8 4.6127ms
+2024-01-23 17:35:05.837 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundarycQDWHpGRbDu9sMls 19066
+2024-01-23 17:35:05.838 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing number: W. Path '', line 1, position 6.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberCharIntoBuffer(Char currentChar, Int32 charPos)
+   at Newtonsoft.Json.JsonTextReader.ReadNumberIntoBuffer()
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value)
+   at familyMart.Master.LoggingMiddleware.createLogger(String message, HttpContext context, String contentBody)
+   at familyMart.Master.LoggingMiddleware.LogRequest(HttpContext context)
+   at familyMart.Master.LoggingMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-01-23 17:35:05.839 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=----WebKitFormBoundarycQDWHpGRbDu9sMls 19066 - 500 - text/plain;+charset=utf-8 2.5896ms
+2024-01-23 17:35:10.830 +07:00 [INF] Application is shutting down...
+2024-01-23 17:35:23.613 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 17:35:23.837 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 17:35:23.837 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 17:35:23.842 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 17:35:23.842 +07:00 [INF] Hosting environment: Development
+2024-01-23 17:35:23.842 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 17:35:52.767 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------154138413159614615830090 20171
+2024-01-23 17:35:52.832 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:35:52.877 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:35:52.994 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:35:53.365 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 17:35:53.480 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 596.0549ms
+2024-01-23 17:35:53.483 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:35:53.487 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------154138413159614615830090 20171 - 200 - application/json;+charset=utf-8 725.3606ms
+2024-01-23 17:36:27.519 +07:00 [INF] Application is shutting down...
+2024-01-23 17:36:39.248 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 17:36:39.475 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 17:36:39.476 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 17:36:39.480 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 17:36:39.480 +07:00 [INF] Hosting environment: Development
+2024-01-23 17:36:39.480 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 17:36:40.663 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------374572716449081325487677 20171
+2024-01-23 17:36:40.728 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:36:40.769 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:36:40.883 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:37:23.765 +07:00 [INF] Application is shutting down...
+2024-01-23 17:37:32.287 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 17:37:32.513 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 17:37:32.513 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 17:37:32.517 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 17:37:32.518 +07:00 [INF] Hosting environment: Development
+2024-01-23 17:37:32.518 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 17:37:33.801 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------500854980795993360060639 20171
+2024-01-23 17:37:33.867 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:37:33.909 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:37:34.024 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:37:36.970 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 17:37:37.089 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 3171.961ms
+2024-01-23 17:37:37.092 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:37:37.099 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------500854980795993360060639 20171 - 200 - application/json;+charset=utf-8 3302.8414ms
+2024-01-23 17:37:50.424 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------424383008203056823077791 20171
+2024-01-23 17:37:50.427 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:37:50.427 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:37:50.428 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:37:50.720 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 17:37:50.720 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 293.069ms
+2024-01-23 17:37:50.720 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:37:50.721 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------424383008203056823077791 20171 - 200 - application/json;+charset=utf-8 296.4260ms
+2024-01-23 17:38:10.182 +07:00 [INF] Application is shutting down...
+2024-01-23 17:38:22.419 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 17:38:22.645 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 17:38:22.645 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 17:38:22.650 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 17:38:22.650 +07:00 [INF] Hosting environment: Development
+2024-01-23 17:38:22.650 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 17:38:23.630 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------412239556062566003030234 20171
+2024-01-23 17:38:23.695 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:38:23.738 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:38:23.863 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:38:26.428 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 17:38:26.555 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 2809.9592ms
+2024-01-23 17:38:26.558 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:38:26.564 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------412239556062566003030234 20171 - 200 - application/json;+charset=utf-8 2939.4283ms
+2024-01-23 17:38:52.933 +07:00 [INF] Application is shutting down...
+2024-01-23 17:39:01.530 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 17:39:01.756 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 17:39:01.756 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 17:39:01.760 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 17:39:01.760 +07:00 [INF] Hosting environment: Development
+2024-01-23 17:39:01.761 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 17:39:05.150 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------204639889634802492146578 20171
+2024-01-23 17:39:05.217 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:39:05.258 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:39:05.371 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:39:06.738 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 17:39:06.867 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 1602.3386ms
+2024-01-23 17:39:06.870 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:39:06.878 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------204639889634802492146578 20171 - 200 - application/json;+charset=utf-8 1733.5796ms
+2024-01-23 17:41:49.138 +07:00 [INF] Application is shutting down...
+2024-01-23 17:43:42.179 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 17:43:42.426 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 17:43:42.426 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 17:43:42.430 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 17:43:42.431 +07:00 [INF] Hosting environment: Development
+2024-01-23 17:43:42.431 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 17:51:10.600 +07:00 [INF] Application is shutting down...
+2024-01-23 17:51:22.880 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 17:51:23.114 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 17:51:23.129 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 17:51:23.134 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 17:51:23.134 +07:00 [INF] Hosting environment: Development
+2024-01-23 17:51:23.134 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 17:51:25.754 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------965202394207280041339923 20171
+2024-01-23 17:51:25.833 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:51:25.880 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:51:25.998 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:51:29.309 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 17:51:29.651 +07:00 [ERR] Failed executing DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE Employees SET ProfileUrl = https://is3.cloudhost.id/tesupload/d8b318d5-713b-4233-9796-bbccc22acaec_500.jpeg WHERE Nik = JD12345
+2024-01-23 17:51:29.680 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 3793.1771ms
+2024-01-23 17:51:29.682 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:51:29.690 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42601: syntax error at or near ":"
+
+POSITION: 40
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at familyMart.Repository.EmployeeRepository.UpdateProfileUrlByNikAsync(String nik, String profileUrl) in /Users/amb/Documents/code/loker/familyMart/Repository/EmployeeRepository.cs:line 81
+   at familyMart.Usecase.EmployeeUsecase.UploadProfileAsync(String nik, UploadProfileRequest request) in /Users/amb/Documents/code/loker/familyMart/Usecase/EmployeeUsecase.cs:line 145
+   at familyMart.Controllers.EmployeeController.UploadPhoto(UploadProfileRequest request) in /Users/amb/Documents/code/loker/familyMart/Controllers/EmployeeController.cs:line 106
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilder.<>c.<<BuildPipeline>b__8_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at familyMart.Middleware.JwtAuthenticationMiddleware.Invoke(HttpContext context) in /Users/amb/Documents/code/loker/familyMart/Middleware/JwtAuthenticationMiddleware.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: syntax error at or near ":"
+    Position: 40
+    File: scan.l
+    Line: 1176
+    Routine: scanner_yyerror
+2024-01-23 17:51:29.737 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------965202394207280041339923 20171 - 500 - text/plain;+charset=utf-8 3990.0539ms
+2024-01-23 17:52:38.749 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------648722441737035923737626 20171
+2024-01-23 17:52:38.750 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:52:38.756 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:52:38.757 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:52:39.205 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 17:52:39.233 +07:00 [ERR] Failed executing DbCommand (19ms) [Parameters=[@p0='?', @p1='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE Employees SET ProfileUrl = @p0 WHERE Nik = @p1
+2024-01-23 17:52:39.235 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 478.4196ms
+2024-01-23 17:52:39.235 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:52:39.236 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "employees" does not exist
+
+POSITION: 8
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at familyMart.Repository.EmployeeRepository.UpdateProfileUrlByNikAsync(String nik, String profileUrl)
+   at familyMart.Usecase.EmployeeUsecase.UploadProfileAsync(String nik, UploadProfileRequest request)
+   at familyMart.Controllers.EmployeeController.UploadPhoto(UploadProfileRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilder.<>c.<<BuildPipeline>b__8_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at familyMart.Middleware.JwtAuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "employees" does not exist
+    Position: 8
+    File: parse_relation.c
+    Line: 1373
+    Routine: parserOpenTable
+2024-01-23 17:52:39.245 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------648722441737035923737626 20171 - 500 - text/plain;+charset=utf-8 495.3505ms
+2024-01-23 17:53:06.714 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------067977959938980307950463 20171
+2024-01-23 17:53:06.716 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:53:06.722 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:53:06.723 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:53:07.981 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 17:53:07.994 +07:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[@p0='?', @p1='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE 'Employees' SET 'ProfileUrl' = @p0 WHERE 'Nik' = @p1
+2024-01-23 17:53:07.995 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 1272.938ms
+2024-01-23 17:53:07.996 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:53:07.996 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42601: syntax error at or near "'Employees'"
+
+POSITION: 8
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at familyMart.Repository.EmployeeRepository.UpdateProfileUrlByNikAsync(String nik, String profileUrl)
+   at familyMart.Usecase.EmployeeUsecase.UploadProfileAsync(String nik, UploadProfileRequest request)
+   at familyMart.Controllers.EmployeeController.UploadPhoto(UploadProfileRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilder.<>c.<<BuildPipeline>b__8_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at familyMart.Middleware.JwtAuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42601
+    MessageText: syntax error at or near "'Employees'"
+    Position: 8
+    File: scan.l
+    Line: 1176
+    Routine: scanner_yyerror
+2024-01-23 17:53:08.004 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------067977959938980307950463 20171 - 500 - text/plain;+charset=utf-8 1289.2070ms
+2024-01-23 17:54:29.060 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------946726282584148619633302 20171
+2024-01-23 17:54:29.060 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:54:29.065 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:54:29.065 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:54:29.638 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 17:54:29.643 +07:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[@p0='?', @p1='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Employees" SET "ProfileUrl" = @p0 WHERE "Nik" = @p1
+2024-01-23 17:54:29.665 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 599.5287ms
+2024-01-23 17:54:29.665 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:54:29.666 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "ProfileUrl" of relation "Employees" does not exist
+
+POSITION: 24
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at familyMart.Repository.EmployeeRepository.UpdateProfileUrlByNikAsync(String nik, String profileUrl)
+   at familyMart.Usecase.EmployeeUsecase.UploadProfileAsync(String nik, UploadProfileRequest request)
+   at familyMart.Controllers.EmployeeController.UploadPhoto(UploadProfileRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilder.<>c.<<BuildPipeline>b__8_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at familyMart.Middleware.JwtAuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "ProfileUrl" of relation "Employees" does not exist
+    Position: 24
+    File: analyze.c
+    Line: 2366
+    Routine: transformUpdateTargetList
+2024-01-23 17:54:29.688 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------946726282584148619633302 20171 - 500 - text/plain;+charset=utf-8 628.4105ms
+2024-01-23 17:54:48.966 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------175360330577029367557987 20171
+2024-01-23 17:54:48.967 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:54:48.972 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:54:48.973 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:54:49.477 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 17:54:49.487 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?', @p1='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Employees" SET "Profile_url" = @p0 WHERE "Nik" = @p1
+2024-01-23 17:54:49.499 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 17:54:49.628 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 655.7224ms
+2024-01-23 17:54:49.628 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:54:49.629 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------175360330577029367557987 20171 - 200 - application/json;+charset=utf-8 662.4614ms
+2024-01-23 17:56:21.799 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------536883399586521652407947 20171
+2024-01-23 17:56:21.800 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:56:21.804 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 17:56:21.805 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 17:56:22.573 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 17:56:22.577 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Employees" SET "Profile_url" = @p0 WHERE "Nik" = @p1
+2024-01-23 17:56:22.577 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 17:56:22.579 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 774.8595ms
+2024-01-23 17:56:22.579 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 17:56:22.580 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------536883399586521652407947 20171 - 200 - application/json;+charset=utf-8 780.1629ms
+2024-01-23 17:59:37.845 +07:00 [INF] Application is shutting down...
+2024-01-23 18:01:08.240 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 18:01:08.477 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 18:01:08.478 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 18:01:08.482 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 18:01:08.482 +07:00 [INF] Hosting environment: Development
+2024-01-23 18:01:08.482 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 18:01:14.752 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------878858303173619235931769 20171
+2024-01-23 18:01:14.824 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 18:01:14.870 +07:00 [INF] Route matched with {action = "UploadPhoto", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadPhoto(familyMart.Request.UploadProfileRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 18:01:14.986 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 18:01:18.954 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 18:01:19.309 +07:00 [INF] Executed DbCommand (95ms) [Parameters=[@p0='?', @p1='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Employees" SET "Profile_url" = @p0 WHERE "Nik" = @p1
+2024-01-23 18:01:19.337 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 18:01:19.467 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.UploadPhoto (familyMart) in 4589.995ms
+2024-01-23 18:01:19.468 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.UploadPhoto (familyMart)'
+2024-01-23 18:01:19.477 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/upload/profile multipart/form-data;+boundary=--------------------------878858303173619235931769 20171 - 200 - application/json;+charset=utf-8 4730.8537ms
+2024-01-23 18:04:40.786 +07:00 [INF] Application is shutting down...

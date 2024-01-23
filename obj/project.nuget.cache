@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "M4m9eXRA9PLM8MttGirA5ejR5fEukRdEvO9BV/Znt0STkefnexP6ab+ClLM6wJSH19373dfwQe5jsjNF09HhZA==",
+  "dgSpecHash": "YADdItEksMlnuxlOiYMjZzvIL7D8CDtvtkGE55/LZ37HrBbtPg26MjRuPlU8gOPSp+yN4dOzFhMzvc7Y0TZbZA==",
   "success": true,
   "projectFilePath": "/Users/amb/Documents/code/loker/familyMart/familyMart.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "/Users/amb/.nuget/packages/automapper.collection/9.0.0/automapper.collection.9.0.0.nupkg.sha512",
     "/Users/amb/.nuget/packages/automapper.extensions.expressionmapping/6.0.4/automapper.extensions.expressionmapping.6.0.4.nupkg.sha512",
     "/Users/amb/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/Users/amb/.nuget/packages/awssdk.core/3.7.301.9/awssdk.core.3.7.301.9.nupkg.sha512",
+    "/Users/amb/.nuget/packages/awssdk.extensions.netcore.setup/3.7.300/awssdk.extensions.netcore.setup.3.7.300.nupkg.sha512",
+    "/Users/amb/.nuget/packages/awssdk.s3/3.7.305.14/awssdk.s3.3.7.305.14.nupkg.sha512",
     "/Users/amb/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/amb/.nuget/packages/dotnetenv/3.0.0/dotnetenv.3.0.0.nupkg.sha512",
     "/Users/amb/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
@@ -27,6 +30,7 @@
     "/Users/amb/.nuget/packages/microsoft.extensions.diagnostics.abstractions/8.0.0/microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
     "/Users/amb/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "/Users/amb/.nuget/packages/microsoft.extensions.hosting.abstractions/8.0.0/microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
+    "/Users/amb/.nuget/packages/microsoft.extensions.http/8.0.0/microsoft.extensions.http.8.0.0.nupkg.sha512",
     "/Users/amb/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "/Users/amb/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "/Users/amb/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",

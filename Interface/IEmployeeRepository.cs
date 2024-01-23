@@ -13,4 +13,5 @@ public interface IEmployeeRepository
     Task<Employee> GetEmployeeByEmailAsync(string email);
     Task<Employee> GetEmployeeByNikAsync(string nik);
     Task RegisterEmployeeStoreProsedureAsync(Employee payload, string salt);
+    Task UpdateProfileUrlByNikAsync(string nik, string profileUrl);
 }

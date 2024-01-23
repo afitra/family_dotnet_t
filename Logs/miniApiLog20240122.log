@@ -1,0 +1,779 @@
+﻿2024-01-22 23:29:41.396 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-22 23:29:41.636 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-22 23:29:41.636 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-22 23:29:41.640 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 23:29:41.641 +07:00 [INF] Hosting environment: Development
+2024-01-22 23:29:41.641 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-22 23:30:03.839 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-22 23:30:04.123 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 289.6510ms
+2024-01-22 23:30:04.169 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:30:04.173 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 3.7390ms
+2024-01-22 23:30:04.201 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:30:04.202 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.6605ms
+2024-01-22 23:30:04.390 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-22 23:30:04.520 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.1970ms
+2024-01-22 23:30:35.730 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 50
+2024-01-22 23:30:36.108 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"272c2725-4413-40eb-af8e-27ed493d0c90","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:30:35.816Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"50","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Request Body -=> {"email":"c@mail.co","password":"123456"}
+
+=== Request Information End ===
+
+2024-01-22 23:30:36.114 +07:00 [INF] CORS policy execution successful.
+2024-01-22 23:30:36.117 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:30:36.157 +07:00 [INF] Route matched with {action = "RegisterUser", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(familyMart.Request.RegisterEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:30:36.561 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-01-22 23:30:36.586 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.RegisterUser (familyMart) in 421.2715ms
+2024-01-22 23:30:36.588 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:30:36.598 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"272c2725-4413-40eb-af8e-27ed493d0c90","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:30:36.590Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"50","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Response Body -=> {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-87dff1112e90808f202d68986af2a698-61f7c8373fb82681-00","errors":{"Password":["Password tidak valid"]}}
+
+=== Response Information End ===
+
+2024-01-22 23:30:36.601 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 50 - 400 - application/problem+json;+charset=utf-8 870.5522ms
+2024-01-22 23:32:52.153 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 52
+2024-01-22 23:32:52.155 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"c620b0e9-ac51-4560-b49a-a2e60c8bfd9b","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:32:52.154Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"52","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Request Body -=> {"email":"c@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-22 23:32:52.156 +07:00 [INF] CORS policy execution successful.
+2024-01-22 23:32:52.156 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:32:52.157 +07:00 [INF] Route matched with {action = "RegisterUser", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(familyMart.Request.RegisterEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:32:52.927 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:32:53.515 +07:00 [ERR] Failed executing DbCommand (107ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Email", "Nik", "Password")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2024-01-22 23:32:53.567 +07:00 [ERR] An exception occurred in the database while saving changes for context type 'familyMart.Connection.BasicDatabase'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "Employees" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Employees" does not exist
+    Position: 13
+    File: parse_relation.c
+    Line: 1373
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "Employees" does not exist
+
+POSITION: 13
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Employees" does not exist
+    Position: 13
+    File: parse_relation.c
+    Line: 1373
+    Routine: parserOpenTable
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-22 23:32:53.576 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:32:53.579 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.RegisterUser (familyMart) in 1421.8094ms
+2024-01-22 23:32:53.579 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:32:53.582 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"c620b0e9-ac51-4560-b49a-a2e60c8bfd9b","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:32:53.580Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"52","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"An error occurred while saving the entity changes. See the inner exception for details.","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:32:53.587 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 52 - 500 - application/json;+charset=utf-8 1433.9131ms
+2024-01-22 23:34:37.239 +07:00 [INF] Application is shutting down...
+2024-01-22 23:36:16.051 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-22 23:36:16.289 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-22 23:36:16.289 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-22 23:36:16.294 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 23:36:16.294 +07:00 [INF] Hosting environment: Development
+2024-01-22 23:36:16.294 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-22 23:36:28.341 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 52
+2024-01-22 23:36:28.631 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"fb7dd17b-5de5-4568-97d5-bc5e9a178ac7","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:36:28.459Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"300f00c1-8aa8-4dca-914d-96977de9c9f1"}
+
+Request Body -=> {"email":"c@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-22 23:36:28.634 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:36:28.672 +07:00 [INF] Route matched with {action = "RegisterUser", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(familyMart.Request.RegisterEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:36:29.872 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:36:30.442 +07:00 [ERR] Failed executing DbCommand (110ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Email", "Nik", "Password")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2024-01-22 23:36:30.497 +07:00 [ERR] An exception occurred in the database while saving changes for context type 'familyMart.Connection.BasicDatabase'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "Nama" of relation "Employees" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "Nama" of relation "Employees" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Employees
+    ColumnName: Nama
+    File: execMain.c
+    Line: 1947
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "Nama" of relation "Employees" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "Nama" of relation "Employees" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Employees
+    ColumnName: Nama
+    File: execMain.c
+    Line: 1947
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-22 23:36:30.516 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:36:30.562 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.RegisterUser (familyMart) in 1882.3912ms
+2024-01-22 23:36:30.563 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:36:30.568 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"fb7dd17b-5de5-4568-97d5-bc5e9a178ac7","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:36:30.566Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"300f00c1-8aa8-4dca-914d-96977de9c9f1"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"An error occurred while saving the entity changes. See the inner exception for details.","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:36:30.578 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 52 - 500 - application/json;+charset=utf-8 2242.6415ms
+2024-01-22 23:39:15.496 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-22 23:39:15.599 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 103.1958ms
+2024-01-22 23:39:15.631 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:39:15.633 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.2156ms
+2024-01-22 23:39:15.675 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:39:15.676 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3802ms
+2024-01-22 23:39:15.835 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-22 23:39:15.947 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 111.3810ms
+2024-01-22 23:39:46.980 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 71
+2024-01-22 23:39:46.981 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"24daea65-3d04-4d6a-8aea-1e15be72187e","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:39:46.981Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"71","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Request Body -=> {"email":"c@mail.co","password":"abcde1234","nama":"budi"}
+
+=== Request Information End ===
+
+2024-01-22 23:39:46.987 +07:00 [INF] CORS policy execution successful.
+2024-01-22 23:39:46.987 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:39:46.992 +07:00 [INF] Route matched with {action = "RegisterUser", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(familyMart.Request.RegisterEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:39:47.057 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:39:47.064 +07:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Email", "Nik", "Password")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2024-01-22 23:39:47.069 +07:00 [ERR] An exception occurred in the database while saving changes for context type 'familyMart.Connection.BasicDatabase'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "Nama" of relation "Employees" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "Nama" of relation "Employees" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Employees
+    ColumnName: Nama
+    File: execMain.c
+    Line: 1947
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "Nama" of relation "Employees" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "Nama" of relation "Employees" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Employees
+    ColumnName: Nama
+    File: execMain.c
+    Line: 1947
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-22 23:39:47.073 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:39:47.074 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.RegisterUser (familyMart) in 81.8723ms
+2024-01-22 23:39:47.074 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:39:47.075 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"24daea65-3d04-4d6a-8aea-1e15be72187e","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:39:47.075Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"71","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"An error occurred while saving the entity changes. See the inner exception for details.","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:39:47.076 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 71 - 500 - application/json;+charset=utf-8 95.3522ms
+2024-01-22 23:40:28.132 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 71
+2024-01-22 23:40:28.134 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"6da85ddd-f5c9-43ea-9285-f55520dab692","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:40:28.134Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"71","Postman-Token":"d5b70eac-901e-4634-bd5e-4db2419c6d91"}
+
+Request Body -=> {"email":"c@mail.co","password":"abcde1234","nama":"budi"}
+
+=== Request Information End ===
+
+2024-01-22 23:40:28.134 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:40:28.135 +07:00 [INF] Route matched with {action = "RegisterUser", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(familyMart.Request.RegisterEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:40:28.150 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:40:28.155 +07:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Email", "Nik", "Password")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2024-01-22 23:40:28.159 +07:00 [ERR] An exception occurred in the database while saving changes for context type 'familyMart.Connection.BasicDatabase'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "Nama" of relation "Employees" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "Nama" of relation "Employees" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Employees
+    ColumnName: Nama
+    File: execMain.c
+    Line: 1947
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "Nama" of relation "Employees" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "Nama" of relation "Employees" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Employees
+    ColumnName: Nama
+    File: execMain.c
+    Line: 1947
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-01-22 23:40:28.163 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:40:28.164 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.RegisterUser (familyMart) in 28.7372ms
+2024-01-22 23:40:28.164 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:40:28.164 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"6da85ddd-f5c9-43ea-9285-f55520dab692","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:40:28.164Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"71","Postman-Token":"d5b70eac-901e-4634-bd5e-4db2419c6d91"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"An error occurred while saving the entity changes. See the inner exception for details.","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:40:28.164 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 71 - 500 - application/json;+charset=utf-8 31.8388ms
+2024-01-22 23:40:31.046 +07:00 [INF] Application is shutting down...
+2024-01-22 23:40:44.894 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-22 23:40:45.131 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-22 23:40:45.131 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-22 23:40:45.135 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 23:40:45.136 +07:00 [INF] Hosting environment: Development
+2024-01-22 23:40:45.136 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-22 23:40:49.583 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 71
+2024-01-22 23:40:49.904 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"d0627247-4b56-4687-bb50-b6aa7ab64d4a","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:40:49.714Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"71","Postman-Token":"a98010ec-317a-4db4-8c8e-255a70116d12"}
+
+Request Body -=> {"email":"c@mail.co","password":"abcde1234","nama":"budi"}
+
+=== Request Information End ===
+
+2024-01-22 23:40:49.908 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:40:49.947 +07:00 [INF] Route matched with {action = "RegisterUser", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(familyMart.Request.RegisterEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:40:51.170 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:40:51.749 +07:00 [INF] Executed DbCommand (97ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Employees" ("Email", "Nama", "Nik", "Password")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2024-01-22 23:40:51.915 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:40:51.958 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.RegisterUser (familyMart) in 2003.7925ms
+2024-01-22 23:40:51.959 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-22 23:40:51.964 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"d0627247-4b56-4687-bb50-b6aa7ab64d4a","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:40:51.961Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"71","Postman-Token":"a98010ec-317a-4db4-8c8e-255a70116d12"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data on Process Registered","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:40:51.975 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 71 - 201 - application/json;+charset=utf-8 2397.2668ms
+2024-01-22 23:53:07.531 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-22 23:53:07.790 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-22 23:53:07.790 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-22 23:53:07.794 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 23:53:07.795 +07:00 [INF] Hosting environment: Development
+2024-01-22 23:53:07.795 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-22 23:53:12.717 +07:00 [INF] Application is shutting down...
+2024-01-22 23:53:24.130 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-22 23:53:24.357 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-22 23:53:24.357 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-22 23:53:24.362 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 23:53:24.362 +07:00 [INF] Hosting environment: Development
+2024-01-22 23:53:24.362 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-22 23:53:26.692 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-22 23:53:26.975 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 288.0552ms
+2024-01-22 23:53:27.079 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:53:27.082 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.8986ms
+2024-01-22 23:53:27.114 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:53:27.115 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.4018ms
+2024-01-22 23:53:27.336 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-22 23:53:27.467 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.4911ms
+2024-01-22 23:54:07.310 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-22 23:54:07.553 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"0f02f587-efac-4cc9-b0de-7c3be8a5787c","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:54:07.370Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"52","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Request Body -=> {"email":"a@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-22 23:54:07.559 +07:00 [INF] CORS policy execution successful.
+2024-01-22 23:54:07.562 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:54:07.607 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:54:08.753 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:54:09.422 +07:00 [INF] Executed DbCommand (95ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-22 23:54:09.521 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:54:09.541 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 1927.2512ms
+2024-01-22 23:54:09.542 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:54:09.546 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"0f02f587-efac-4cc9-b0de-7c3be8a5787c","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:54:09.544Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"52","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Invalid username or password","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:54:09.553 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 500 - application/json;+charset=utf-8 2243.3323ms
+2024-01-22 23:55:31.453 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-22 23:55:31.462 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 8.5637ms
+2024-01-22 23:55:31.500 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:55:31.501 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.5999ms
+2024-01-22 23:55:31.514 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:55:31.515 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.7537ms
+2024-01-22 23:55:31.597 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-22 23:55:31.605 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.3395ms
+2024-01-22 23:56:07.247 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-22 23:56:07.248 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"704960a7-e185-4543-b4cb-ae1e28aeec37","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:56:07.247Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"52","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Request Body -=> {"email":"a@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-22 23:56:07.248 +07:00 [INF] CORS policy execution successful.
+2024-01-22 23:56:07.248 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:56:07.253 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:56:07.258 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:56:07.266 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-22 23:56:07.268 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:56:07.269 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 16.5659ms
+2024-01-22 23:56:07.270 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:56:07.270 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"704960a7-e185-4543-b4cb-ae1e28aeec37","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:56:07.270Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"52","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Invalid username or password","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:56:07.271 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 500 - application/json;+charset=utf-8 23.7603ms
+2024-01-22 23:56:20.232 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-22 23:56:20.235 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"9af2913e-1a28-4ce6-9439-be9bb5c6ceed","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:56:20.234Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"4fcf59c6-d5e8-4f49-a28c-f011d1b5271a"}
+
+Request Body -=> {"email":"a@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-22 23:56:20.235 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:56:20.235 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:56:20.311 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:56:20.317 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-22 23:56:20.317 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:56:20.318 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 82.2758ms
+2024-01-22 23:56:20.318 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:56:20.318 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"9af2913e-1a28-4ce6-9439-be9bb5c6ceed","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:56:20.318Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"4fcf59c6-d5e8-4f49-a28c-f011d1b5271a"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Invalid username or password","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:56:20.318 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 500 - application/json;+charset=utf-8 86.4834ms
+2024-01-22 23:57:01.076 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-22 23:57:01.084 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 7.7271ms
+2024-01-22 23:57:01.130 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:57:01.130 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3302ms
+2024-01-22 23:57:01.143 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:57:01.143 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3848ms
+2024-01-22 23:57:01.324 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-22 23:57:01.329 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.0578ms
+2024-01-22 23:57:05.976 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-22 23:57:05.977 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"3e63b9a9-7acd-4d34-a8ed-dae06b05a435","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:57:05.977Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"2981ed19-70ab-4f87-a70a-1fcdc598ff22"}
+
+Request Body -=> {"email":"a@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-22 23:57:05.977 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:57:05.982 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:57:05.988 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:57:05.994 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-22 23:57:05.995 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:57:05.996 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 14.2319ms
+2024-01-22 23:57:05.996 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:57:05.997 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"3e63b9a9-7acd-4d34-a8ed-dae06b05a435","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:57:05.997Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"2981ed19-70ab-4f87-a70a-1fcdc598ff22"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Invalid username or password","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:57:05.997 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 500 - application/json;+charset=utf-8 20.8842ms
+2024-01-22 23:57:22.404 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-22 23:57:22.413 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 9.5858ms
+2024-01-22 23:57:22.454 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:57:22.455 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.6772ms
+2024-01-22 23:57:22.469 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:57:22.470 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3600ms
+2024-01-22 23:57:22.553 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-22 23:57:22.557 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.0751ms
+2024-01-22 23:57:46.565 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-22 23:57:46.574 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 9.0204ms
+2024-01-22 23:57:46.608 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:57:46.609 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.4279ms
+2024-01-22 23:57:46.647 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:57:46.647 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.2997ms
+2024-01-22 23:57:46.722 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-22 23:57:46.731 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.1699ms
+2024-01-22 23:57:50.295 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-22 23:57:50.297 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 1.3552ms
+2024-01-22 23:57:50.336 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:57:50.336 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.7785ms
+2024-01-22 23:57:50.355 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-22 23:57:50.357 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.6017ms
+2024-01-22 23:57:50.530 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-22 23:57:50.532 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.7508ms
+2024-01-22 23:57:56.267 +07:00 [INF] Application is shutting down...
+2024-01-22 23:58:09.040 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-22 23:58:09.270 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-22 23:58:09.270 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-22 23:58:09.275 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 23:58:09.275 +07:00 [INF] Hosting environment: Development
+2024-01-22 23:58:09.275 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-22 23:58:10.590 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 53
+2024-01-22 23:58:10.893 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"7f278e17-4c77-42b5-86c2-e16aae9cb39e","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:58:10.715Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"53","Postman-Token":"4f3c6805-9f66-4984-b143-bcc2fefc7691"}
+
+Request Body -=> {"email":"ab@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-22 23:58:10.896 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:58:10.936 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:58:12.119 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:58:12.834 +07:00 [INF] Executed DbCommand (100ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-22 23:58:12.877 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:58:12.927 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 1982.8795ms
+2024-01-22 23:58:12.928 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:58:12.933 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"7f278e17-4c77-42b5-86c2-e16aae9cb39e","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:58:12.931Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"53","Postman-Token":"4f3c6805-9f66-4984-b143-bcc2fefc7691"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Object reference not set to an instance of an object.","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:58:12.945 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 53 - 500 - application/json;+charset=utf-8 2360.7505ms
+2024-01-22 23:58:48.075 +07:00 [INF] Application is shutting down...
+2024-01-22 23:58:57.017 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-22 23:58:57.245 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-22 23:58:57.246 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-22 23:58:57.250 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-22 23:58:57.250 +07:00 [INF] Hosting environment: Development
+2024-01-22 23:58:57.250 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-22 23:58:59.200 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 53
+2024-01-22 23:58:59.498 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"745f6061-6d25-4aba-9050-2a8c405ec976","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:58:59.322Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"53","Postman-Token":"4e84fb19-f469-488c-ac85-a847b0d75c44"}
+
+Request Body -=> {"email":"ab@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-22 23:58:59.502 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:58:59.541 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-22 23:59:00.736 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-22 23:59:01.413 +07:00 [INF] Executed DbCommand (101ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-22 23:59:01.456 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-22 23:59:01.503 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 1954.5785ms
+2024-01-22 23:59:01.505 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-22 23:59:01.511 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"745f6061-6d25-4aba-9050-2a8c405ec976","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-22T16:59:01.508Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"53","Postman-Token":"4e84fb19-f469-488c-ac85-a847b0d75c44"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Object reference not set to an instance of an object.","data":null}
+
+=== Response Information End ===
+
+2024-01-22 23:59:01.522 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 53 - 500 - application/json;+charset=utf-8 2328.1167ms

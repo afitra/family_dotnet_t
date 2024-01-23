@@ -1,4 +1,9 @@
 --  START STORE PROSEDURE REGISTER EMPLOYEEE
+-- Install the pgcrypto extension if not already installed
+CREATE
+EXTENSION IF NOT EXISTS pgcrypto;
+
+-- START STORED PROCEDURE REGISTER EMPLOYEE
 CREATE
 OR REPLACE PROCEDURE sp_RegisterEmployee(
     p_Nama VARCHAR(255),
@@ -12,7 +17,7 @@ AS $$
 DECLARE
 v_HashedPassword VARCHAR(255);
 BEGIN
-    -- Hashing password dengan salt
+    -- Hashing pakai  salt using pgcrypto extension
     v_HashedPassword
 := ENCODE(DIGEST(p_Salt || p_Password, 'sha256'), 'base64');
 
@@ -24,11 +29,12 @@ VALUES (p_Nama, p_Nik, p_Email, v_HashedPassword);
 RETURN;
 EXCEPTION
         WHEN unique_violation THEN
-            -- jka duplikat return err
+            -- Jika duplikat lempar error
             RETURN;
 END;
 END;
 $$;
+
 
 
 CALL sp_RegisterEmployee('NamaKaryawan', 'NIK123', 'email@example.com', 'password123', 'sembilanKucing');

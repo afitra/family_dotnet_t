@@ -10749,3 +10749,1718 @@ Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Da
 
 2024-01-23 13:57:45.249 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37 - 200 - application/json;+charset=utf-8 9.1047ms
 2024-01-23 13:57:51.796 +07:00 [INF] Application is shutting down...
+2024-01-23 15:06:53.251 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:06:53.487 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:06:53.487 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:06:53.492 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:06:53.492 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:06:53.492 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:07:08.298 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 57
+2024-01-23 15:07:08.652 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"8d5c159b-78e8-4f58-856a-4e1cdbfd9281","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:08.439Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"57","Postman-Token":"3ef590d9-2601-4a13-9ca9-bd2af9137b5c"}
+
+Request Body -=> {"email":"store1@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:07:08.655 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:07:08.700 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:07:09.976 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:07:10.646 +07:00 [INF] Executed DbCommand (99ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:07:10.688 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:07:10.737 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 2030.0264ms
+2024-01-23 15:07:10.738 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:07:10.744 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"8d5c159b-78e8-4f58-856a-4e1cdbfd9281","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:10.741Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"57","Postman-Token":"3ef590d9-2601-4a13-9ca9-bd2af9137b5c"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Invalid username or password","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:07:10.754 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 57 - 500 - application/json;+charset=utf-8 2461.6046ms
+2024-01-23 15:07:15.781 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 75
+2024-01-23 15:07:15.792 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"a1f87b78-703f-45c4-ba4d-42c5c9915698","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:15.792Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"75","Postman-Token":"36114d9f-faa9-4f89-b82f-ee43e63f43ca"}
+
+Request Body -=> {"email":"store1@mail.co","password":"abcd1234","nama":"budi"}
+
+=== Request Information End ===
+
+2024-01-23 15:07:15.792 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-23 15:07:15.797 +07:00 [INF] Route matched with {action = "RegisterUser", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(familyMart.Request.RegisterEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:07:15.807 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:07:15.816 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:07:15.847 +07:00 [INF] Executed DbCommand (14ms) [Parameters=[@p_Nama='?', @p_Nik='?', @p_Email='?', @p_Password='?', @p_Salt='?'], CommandType='"Text"', CommandTimeout='30']
+CALL sp_RegisterEmployee(@p_Nama, @p_Nik, @p_Email, @p_Password, @p_Salt);
+2024-01-23 15:07:15.901 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:07:15.902 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.RegisterUser (familyMart) in 104.6473ms
+2024-01-23 15:07:15.902 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-23 15:07:15.902 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"a1f87b78-703f-45c4-ba4d-42c5c9915698","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:15.902Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"75","Postman-Token":"36114d9f-faa9-4f89-b82f-ee43e63f43ca"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data on Process Registered","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:07:15.903 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 75 - 201 - application/json;+charset=utf-8 121.6170ms
+2024-01-23 15:07:19.568 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 57
+2024-01-23 15:07:19.569 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"c18f3176-655d-4d2b-a604-117b9acd3b0b","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:19.568Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"57","Postman-Token":"22dfd2c6-f4ff-46d3-8ca3-66fad35bdd10"}
+
+Request Body -=> {"email":"store1@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:07:19.569 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:07:19.570 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:07:19.652 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:07:19.657 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:07:19.724 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:07:19.746 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 176.3562ms
+2024-01-23 15:07:19.747 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:07:19.749 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"c18f3176-655d-4d2b-a604-117b9acd3b0b","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:19.747Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"57","Postman-Token":"22dfd2c6-f4ff-46d3-8ca3-66fad35bdd10"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data Already Send","data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InN0b3JlMUBtYWlsLmNvIiwiTmlrIjoiOU9USTFFMEQiLCJuYmYiOjE3MDU5OTcyMzksImV4cCI6MTcwNjA4MzYzOSwiaWF0IjoxNzA1OTk3MjM5fQ.CNwvkTbCPdb2RuVEqr6MMO-AqUpJxZTMEG3NiZsnTz8"}}
+
+=== Response Information End ===
+
+2024-01-23 15:07:19.749 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 57 - 200 - application/json;+charset=utf-8 181.6692ms
+2024-01-23 15:07:21.489 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 57
+2024-01-23 15:07:21.490 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"f8f9eb5c-2b37-443f-a842-d29c3f202d03","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:21.490Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"57","Postman-Token":"5421a9c5-1956-4e2a-bfc8-33fd79294172"}
+
+Request Body -=> {"email":"store1@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:07:21.490 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:07:21.490 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:07:21.491 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:07:21.494 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:07:21.494 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:07:21.495 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 4.1287ms
+2024-01-23 15:07:21.495 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:07:21.495 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"f8f9eb5c-2b37-443f-a842-d29c3f202d03","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:21.495Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"57","Postman-Token":"5421a9c5-1956-4e2a-bfc8-33fd79294172"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data Already Send","data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InN0b3JlMUBtYWlsLmNvIiwiTmlrIjoiOU9USTFFMEQiLCJuYmYiOjE3MDU5OTcyNDEsImV4cCI6MTcwNjA4MzY0MSwiaWF0IjoxNzA1OTk3MjQxfQ.GLQQh4nxzSbIbq0WsgleUsdq9fcGgYIU22imaMar2JI"}}
+
+=== Response Information End ===
+
+2024-01-23 15:07:21.495 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 57 - 200 - application/json;+charset=utf-8 6.2009ms
+2024-01-23 15:07:27.874 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 58
+2024-01-23 15:07:27.875 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"96a193ba-dcdc-4211-b474-dccc770c6d85","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:27.875Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"58","Postman-Token":"b4d247c6-9663-4e58-b6bc-b420aab5b55e"}
+
+Request Body -=> {"email":"store1@mail.co","password":"abcd1234r"}
+
+=== Request Information End ===
+
+2024-01-23 15:07:27.875 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:07:27.875 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:07:27.876 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:07:27.878 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:07:27.879 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:07:27.879 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 4.2487ms
+2024-01-23 15:07:27.880 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:07:27.880 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"96a193ba-dcdc-4211-b474-dccc770c6d85","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:27.880Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"58","Postman-Token":"b4d247c6-9663-4e58-b6bc-b420aab5b55e"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Invalid username or password","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:07:27.880 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 58 - 500 - application/json;+charset=utf-8 6.0847ms
+2024-01-23 15:07:29.705 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 57
+2024-01-23 15:07:29.706 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"61774580-8551-4a20-bfa8-31f2928ca818","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:29.705Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"57","Postman-Token":"ed79c0c2-09b2-4287-87f2-11c6075c4693"}
+
+Request Body -=> {"email":"store1@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:07:29.706 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:07:29.706 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:07:29.707 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:07:29.709 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:07:29.710 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:07:29.710 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 4.1495ms
+2024-01-23 15:07:29.710 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:07:29.711 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"61774580-8551-4a20-bfa8-31f2928ca818","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:07:29.711Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"57","Postman-Token":"ed79c0c2-09b2-4287-87f2-11c6075c4693"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data Already Send","data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InN0b3JlMUBtYWlsLmNvIiwiTmlrIjoiOU9USTFFMEQiLCJuYmYiOjE3MDU5OTcyNDksImV4cCI6MTcwNjA4MzY0OSwiaWF0IjoxNzA1OTk3MjQ5fQ.vSx6KNAXAG-BhxVpymnjmeIu5tDoUF5wZD68eM3iF8g"}}
+
+=== Response Information End ===
+
+2024-01-23 15:07:29.711 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 57 - 200 - application/json;+charset=utf-8 5.8386ms
+2024-01-23 15:09:16.091 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37
+2024-01-23 15:09:16.092 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"549bc02c-ccac-410a-adf5-e733e6275d48","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:09:16.092Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InN0b3JlQG1haWwuY28iLCJOaWsiOiIyMzROOUdWRyIsIm5iZiI6MTcwNTk5MTg0OCwiZXhwIjoxNzA2MDc4MjQ4LCJpYXQiOjE3MDU5OTE4NDh9.v62B8UAoqt-I_GEJufUvrj-bh7yZuULb-CFXC-A929c","Content-Type":"application/json","Content-Length":"37","Postman-Token":"b71b875f-8392-44fe-ac4d-d5e81358724f"}
+
+Request Body -=> {"bulan":"1","tahun":"2024"}
+
+=== Request Information End ===
+
+2024-01-23 15:09:16.093 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:09:16.097 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.RekapEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:09:16.175 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:09:16.183 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:09:16.189 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:09:16.191 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:09:16.192 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 94.6248ms
+2024-01-23 15:09:16.192 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:09:16.193 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"549bc02c-ccac-410a-adf5-e733e6275d48","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:09:16.193Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InN0b3JlQG1haWwuY28iLCJOaWsiOiIyMzROOUdWRyIsIm5iZiI6MTcwNTk5MTg0OCwiZXhwIjoxNzA2MDc4MjQ4LCJpYXQiOjE3MDU5OTE4NDh9.v62B8UAoqt-I_GEJufUvrj-bh7yZuULb-CFXC-A929c","Content-Type":"application/json","Content-Length":"37","Postman-Token":"b71b875f-8392-44fe-ac4d-d5e81358724f"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Token is missing or invalid.","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:09:16.193 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37 - 500 - application/json;+charset=utf-8 101.6583ms
+2024-01-23 15:10:51.606 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-23 15:10:51.607 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"a2ce673f-255a-42ea-aaba-837337e3784b","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:10:51.607Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"036211d3-85ea-4dc3-bcad-3c69a20f160f"}
+
+Request Body -=> {"email":"a@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:10:51.607 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:10:51.607 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:10:51.608 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:10:51.610 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:10:51.611 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:10:51.611 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 3.8824ms
+2024-01-23 15:10:51.611 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:10:51.611 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"a2ce673f-255a-42ea-aaba-837337e3784b","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:10:51.611Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"036211d3-85ea-4dc3-bcad-3c69a20f160f"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data Already Send","data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc0NTEsImV4cCI6MTcwNjA4Mzg1MSwiaWF0IjoxNzA1OTk3NDUxfQ.73uXMwj4y9V75-04ThOIRZU8HUevUBFReCU87YWX2xM"}}
+
+=== Response Information End ===
+
+2024-01-23 15:10:51.612 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 200 - application/json;+charset=utf-8 6.2573ms
+2024-01-23 15:10:57.824 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 53
+2024-01-23 15:10:57.825 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"a8f76aec-fe2d-4dec-b798-70b9abb3566c","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:10:57.825Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"53","Postman-Token":"ebb51f4b-d16a-4839-b245-b1112a406cca"}
+
+Request Body -=> {"email":"a@mail.co","password":"aabcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:10:57.825 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:10:57.825 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:10:57.826 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:10:57.828 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:10:57.829 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:10:57.829 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 3.7912ms
+2024-01-23 15:10:57.829 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:10:57.830 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"a8f76aec-fe2d-4dec-b798-70b9abb3566c","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:10:57.829Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"53","Postman-Token":"ebb51f4b-d16a-4839-b245-b1112a406cca"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Invalid username or password","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:10:57.830 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 53 - 500 - application/json;+charset=utf-8 5.3208ms
+2024-01-23 15:10:59.975 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-23 15:10:59.976 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"59c102dc-d5ba-4027-9ee0-fbff86ba8803","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:10:59.976Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"34955831-6a8c-410f-93df-279efca7c7ca"}
+
+Request Body -=> {"email":"a@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:10:59.976 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:10:59.977 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:10:59.978 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:10:59.981 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:10:59.982 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:10:59.982 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 5.2445ms
+2024-01-23 15:10:59.982 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:10:59.983 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"59c102dc-d5ba-4027-9ee0-fbff86ba8803","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:10:59.982Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"34955831-6a8c-410f-93df-279efca7c7ca"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data Already Send","data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc0NTksImV4cCI6MTcwNjA4Mzg1OSwiaWF0IjoxNzA1OTk3NDU5fQ.tpFwpjCNv8Zp2NL96yMrhZyODK5kEKuuKMU413TmTPU"}}
+
+=== Response Information End ===
+
+2024-01-23 15:10:59.983 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 200 - application/json;+charset=utf-8 7.8164ms
+2024-01-23 15:11:17.323 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 80
+2024-01-23 15:11:17.327 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"7b013388-e693-4946-805a-5e4d3cb79d30","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:11:17.324Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc0NTksImV4cCI6MTcwNjA4Mzg1OSwiaWF0IjoxNzA1OTk3NDU5fQ.tpFwpjCNv8Zp2NL96yMrhZyODK5kEKuuKMU413TmTPU","Content-Type":"application/json","Content-Length":"80","Postman-Token":"342ce4cd-8f9c-4425-a93e-b9492d6257e4"}
+
+Request Body -=> {"id":0,"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}
+
+=== Request Information End ===
+
+2024-01-23 15:11:17.327 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:11:17.331 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.AbsenEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:11:17.332 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:11:17.345 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:11:17.347 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:11:17.368 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__tanggal_1='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Employee_id", a."Geotagging", a."Tanggal"
+FROM "Absens" AS a
+WHERE (a."Employee_id" = @__employeeId_0) AND (a."Tanggal" = @__tanggal_1)
+LIMIT 1
+2024-01-23 15:11:17.567 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Absens" ("Employee_id", "Geotagging", "Tanggal")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2024-01-23 15:11:17.629 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:11:17.637 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 305.1176ms
+2024-01-23 15:11:17.637 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:11:17.637 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"7b013388-e693-4946-805a-5e4d3cb79d30","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:11:17.637Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc0NTksImV4cCI6MTcwNjA4Mzg1OSwiaWF0IjoxNzA1OTk3NDU5fQ.tpFwpjCNv8Zp2NL96yMrhZyODK5kEKuuKMU413TmTPU","Content-Type":"application/json","Content-Length":"80","Postman-Token":"342ce4cd-8f9c-4425-a93e-b9492d6257e4"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"absen":{"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}}
+
+=== Response Information End ===
+
+2024-01-23 15:11:17.637 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 80 - 200 - application/json;+charset=utf-8 314.6003ms
+2024-01-23 15:11:28.627 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37
+2024-01-23 15:11:28.629 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"8f7f4528-1233-47f7-8ac5-a1aecc358a4a","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:11:28.628Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc0NTksImV4cCI6MTcwNjA4Mzg1OSwiaWF0IjoxNzA1OTk3NDU5fQ.tpFwpjCNv8Zp2NL96yMrhZyODK5kEKuuKMU413TmTPU","Content-Type":"application/json","Content-Length":"37","Postman-Token":"55e2a790-9b41-4678-ad6c-4fa484d7ef87"}
+
+Request Body -=> {"bulan":"1","tahun":"2024"}
+
+=== Request Information End ===
+
+2024-01-23 15:11:28.629 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:11:28.629 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.RekapEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:11:28.629 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:11:28.630 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:11:28.633 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:11:28.668 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@EmployeeId='?' (DbType = Int32), @TargetMonth='?' (DbType = Int32), @TargetYear='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM public.getabsenbyemployeeandmonthfunction(@EmployeeId, @TargetMonth, @TargetYear);
+2024-01-23 15:11:28.690 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:11:28.696 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 66.6597ms
+2024-01-23 15:11:28.696 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:11:28.698 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"8f7f4528-1233-47f7-8ac5-a1aecc358a4a","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:11:28.696Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc0NTksImV4cCI6MTcwNjA4Mzg1OSwiaWF0IjoxNzA1OTk3NDU5fQ.tpFwpjCNv8Zp2NL96yMrhZyODK5kEKuuKMU413TmTPU","Content-Type":"application/json","Content-Length":"37","Postman-Token":"55e2a790-9b41-4678-ad6c-4fa484d7ef87"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"rekap":[{"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}]}
+
+=== Response Information End ===
+
+2024-01-23 15:11:28.698 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37 - 200 - application/json;+charset=utf-8 70.8329ms
+2024-01-23 15:12:49.467 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-23 15:12:49.469 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"40bf001a-88f2-477f-9d16-6f508f650e7e","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:12:49.469Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"e33a8b23-c98f-4933-8e3e-080e75d0c2dd"}
+
+Request Body -=> {"email":"c@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:12:49.469 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:12:49.469 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:12:49.470 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:12:49.488 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:12:49.488 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:12:49.488 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 19.2026ms
+2024-01-23 15:12:49.489 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:12:49.489 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"40bf001a-88f2-477f-9d16-6f508f650e7e","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:12:49.489Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"e33a8b23-c98f-4933-8e3e-080e75d0c2dd"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Invalid username or password","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:12:49.489 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 500 - application/json;+charset=utf-8 21.7163ms
+2024-01-23 15:13:24.103 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-23 15:13:24.106 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"4eb2e68f-9b8d-492d-86f4-fa62f527c9e6","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:13:24.106Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"fa8e313a-fbea-4a0a-8735-5f4c7f7a423d"}
+
+Request Body -=> {"email":"c@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:13:24.109 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:13:24.109 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:13:24.112 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:13:24.116 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:13:24.116 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:13:24.117 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 7.3361ms
+2024-01-23 15:13:24.117 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:13:24.117 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"4eb2e68f-9b8d-492d-86f4-fa62f527c9e6","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:13:24.117Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"fa8e313a-fbea-4a0a-8735-5f4c7f7a423d"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Invalid username or password","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:13:24.118 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 500 - application/json;+charset=utf-8 14.9347ms
+2024-01-23 15:13:26.109 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-23 15:13:26.110 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"9a7210cb-bb76-4e15-acf7-0374705d47e7","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:13:26.110Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"3ec606bc-f733-4b40-ba64-4c4666929679"}
+
+Request Body -=> {"email":"c@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:13:26.110 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:13:26.110 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:13:26.111 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:13:26.113 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:13:26.114 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:13:26.114 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 4.1789ms
+2024-01-23 15:13:26.115 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:13:26.115 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"9a7210cb-bb76-4e15-acf7-0374705d47e7","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:13:26.115Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"3ec606bc-f733-4b40-ba64-4c4666929679"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Invalid username or password","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:13:26.115 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 500 - application/json;+charset=utf-8 6.1762ms
+2024-01-23 15:13:35.993 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-23 15:13:35.995 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"16877042-a363-4975-b2c2-c098400a0cb2","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:13:35.994Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"25f61fa5-d1d2-4898-9e80-2b5e247fcc29"}
+
+Request Body -=> {"email":"c@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:13:35.995 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:13:35.995 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:13:35.996 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:13:35.998 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:13:35.999 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:13:35.999 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 3.8822ms
+2024-01-23 15:13:35.999 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:13:36.000 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"16877042-a363-4975-b2c2-c098400a0cb2","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:13:35.999Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"25f61fa5-d1d2-4898-9e80-2b5e247fcc29"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data Already Send","data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNAbWFpbC5jbyIsIk5payI6Ik5JSzEyMyIsIm5iZiI6MTcwNTk5NzYxNSwiZXhwIjoxNzA2MDg0MDE1LCJpYXQiOjE3MDU5OTc2MTV9.tPAE0r8Hv2bhPMwcCvRDADep8G_oFCMj4ZPTrkMhf70"}}
+
+=== Response Information End ===
+
+2024-01-23 15:13:36.000 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 200 - application/json;+charset=utf-8 7.0157ms
+2024-01-23 15:13:50.288 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 80
+2024-01-23 15:13:50.289 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"adc6ac73-0c6f-4057-b78d-529e11562f94","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:13:50.289Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNAbWFpbC5jbyIsIk5payI6Ik5JSzEyMyIsIm5iZiI6MTcwNTk5NzYxNSwiZXhwIjoxNzA2MDg0MDE1LCJpYXQiOjE3MDU5OTc2MTV9.tPAE0r8Hv2bhPMwcCvRDADep8G_oFCMj4ZPTrkMhf70","Content-Type":"application/json","Content-Length":"80","Postman-Token":"50da1c53-f240-4bb6-b4f0-cdc4fa2026f1"}
+
+Request Body -=> {"id":0,"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}
+
+=== Request Information End ===
+
+2024-01-23 15:13:50.289 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:13:50.289 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.AbsenEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:13:50.290 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:13:50.291 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:13:50.293 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:13:50.296 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__tanggal_1='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Employee_id", a."Geotagging", a."Tanggal"
+FROM "Absens" AS a
+WHERE (a."Employee_id" = @__employeeId_0) AND (a."Tanggal" = @__tanggal_1)
+LIMIT 1
+2024-01-23 15:13:50.302 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Absens" ("Employee_id", "Geotagging", "Tanggal")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2024-01-23 15:13:50.305 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:13:50.306 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 16.4627ms
+2024-01-23 15:13:50.306 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:13:50.306 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"adc6ac73-0c6f-4057-b78d-529e11562f94","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:13:50.306Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNAbWFpbC5jbyIsIk5payI6Ik5JSzEyMyIsIm5iZiI6MTcwNTk5NzYxNSwiZXhwIjoxNzA2MDg0MDE1LCJpYXQiOjE3MDU5OTc2MTV9.tPAE0r8Hv2bhPMwcCvRDADep8G_oFCMj4ZPTrkMhf70","Content-Type":"application/json","Content-Length":"80","Postman-Token":"50da1c53-f240-4bb6-b4f0-cdc4fa2026f1"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"absen":{"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}}
+
+=== Response Information End ===
+
+2024-01-23 15:13:50.306 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 80 - 200 - application/json;+charset=utf-8 18.2706ms
+2024-01-23 15:14:07.152 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37
+2024-01-23 15:14:07.153 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"ec437fa8-4322-452f-bb56-d4395760a3d6","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:14:07.153Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNAbWFpbC5jbyIsIk5payI6Ik5JSzEyMyIsIm5iZiI6MTcwNTk5NzYxNSwiZXhwIjoxNzA2MDg0MDE1LCJpYXQiOjE3MDU5OTc2MTV9.tPAE0r8Hv2bhPMwcCvRDADep8G_oFCMj4ZPTrkMhf70","Content-Type":"application/json","Content-Length":"37","Postman-Token":"3eae6ab4-d559-45e7-b0c8-1326e4caa6bc"}
+
+Request Body -=> {"bulan":"1","tahun":"2024"}
+
+=== Request Information End ===
+
+2024-01-23 15:14:07.153 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:14:07.153 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.RekapEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:14:07.154 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:14:07.156 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:14:07.159 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:14:07.164 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@EmployeeId='?' (DbType = Int32), @TargetMonth='?' (DbType = Int32), @TargetYear='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM public.getabsenbyemployeeandmonthfunction(@EmployeeId, @TargetMonth, @TargetYear);
+2024-01-23 15:14:07.165 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:14:07.165 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 11.6509ms
+2024-01-23 15:14:07.165 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:14:07.166 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"ec437fa8-4322-452f-bb56-d4395760a3d6","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:14:07.165Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNAbWFpbC5jbyIsIk5payI6Ik5JSzEyMyIsIm5iZiI6MTcwNTk5NzYxNSwiZXhwIjoxNzA2MDg0MDE1LCJpYXQiOjE3MDU5OTc2MTV9.tPAE0r8Hv2bhPMwcCvRDADep8G_oFCMj4ZPTrkMhf70","Content-Type":"application/json","Content-Length":"37","Postman-Token":"3eae6ab4-d559-45e7-b0c8-1326e4caa6bc"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"rekap":[{"tanggal":"2024-01-22","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-23","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-24","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-25","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-26","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}]}
+
+=== Response Information End ===
+
+2024-01-23 15:14:07.166 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37 - 200 - application/json;+charset=utf-8 13.9417ms
+2024-01-23 15:14:11.354 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 80
+2024-01-23 15:14:11.355 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"18e412b2-e39f-4b46-a935-56dea02c8f1f","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:14:11.355Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNAbWFpbC5jbyIsIk5payI6Ik5JSzEyMyIsIm5iZiI6MTcwNTk5NzYxNSwiZXhwIjoxNzA2MDg0MDE1LCJpYXQiOjE3MDU5OTc2MTV9.tPAE0r8Hv2bhPMwcCvRDADep8G_oFCMj4ZPTrkMhf70","Content-Type":"application/json","Content-Length":"80","Postman-Token":"679010b3-215c-4a15-a74b-13bdd5cffdc8"}
+
+Request Body -=> {"id":0,"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}
+
+=== Request Information End ===
+
+2024-01-23 15:14:11.355 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:14:11.355 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.AbsenEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:14:11.356 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:14:11.357 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:14:11.359 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:14:11.361 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__tanggal_1='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Employee_id", a."Geotagging", a."Tanggal"
+FROM "Absens" AS a
+WHERE (a."Employee_id" = @__employeeId_0) AND (a."Tanggal" = @__tanggal_1)
+LIMIT 1
+2024-01-23 15:14:11.362 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:14:11.362 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 7.0778ms
+2024-01-23 15:14:11.363 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:14:11.363 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"18e412b2-e39f-4b46-a935-56dea02c8f1f","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:14:11.363Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNAbWFpbC5jbyIsIk5payI6Ik5JSzEyMyIsIm5iZiI6MTcwNTk5NzYxNSwiZXhwIjoxNzA2MDg0MDE1LCJpYXQiOjE3MDU5OTc2MTV9.tPAE0r8Hv2bhPMwcCvRDADep8G_oFCMj4ZPTrkMhf70","Content-Type":"application/json","Content-Length":"80","Postman-Token":"679010b3-215c-4a15-a74b-13bdd5cffdc8"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"You have made an absence today","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:14:11.363 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 80 - 500 - application/json;+charset=utf-8 8.8447ms
+2024-01-23 15:15:58.256 +07:00 [INF] Application is shutting down...
+2024-01-23 15:16:13.986 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:16:14.249 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:16:14.249 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:16:14.253 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:16:14.254 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:16:14.254 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:16:16.950 +07:00 [INF] Application is shutting down...
+2024-01-23 15:16:25.035 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:16:25.262 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:16:25.262 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:16:25.266 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:16:25.267 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:16:25.267 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:18:01.569 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 75
+2024-01-23 15:18:01.920 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"21f28546-e228-4508-be66-fa759b79e174","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:18:01.730Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"75","Postman-Token":"80c7c09e-d670-4c72-bc16-8089693721a7"}
+
+Request Body -=> {"email":"store1@mail.co","password":"abcd1234","nama":"budi"}
+
+=== Request Information End ===
+
+2024-01-23 15:18:01.924 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-23 15:18:01.970 +07:00 [INF] Route matched with {action = "RegisterUser", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(familyMart.Request.RegisterEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:18:03.252 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:18:03.919 +07:00 [INF] Executed DbCommand (96ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:18:03.974 +07:00 [INF] Executed DbCommand (14ms) [Parameters=[@p_Nama='?', @p_Nik='?', @p_Email='?', @p_Password='?', @p_Salt='?'], CommandType='"Text"', CommandTimeout='30']
+CALL sp_RegisterEmployee(@p_Nama, @p_Nik, @p_Email, @p_Password, @p_Salt);
+2024-01-23 15:18:04.041 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:18:04.081 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.RegisterUser (familyMart) in 2103.4351ms
+2024-01-23 15:18:04.082 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-23 15:18:04.089 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"21f28546-e228-4508-be66-fa759b79e174","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:18:04.087Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"75","Postman-Token":"80c7c09e-d670-4c72-bc16-8089693721a7"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data on Process Registered","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:18:04.100 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 75 - 201 - application/json;+charset=utf-8 2537.8015ms
+2024-01-23 15:18:51.534 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 70
+2024-01-23 15:18:51.536 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"cb4590b2-ec3f-4735-b92f-f76584a5c615","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:18:51.536Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"70","Postman-Token":"3ed8c61a-91a7-4e38-9e20-1cebf22f42e0"}
+
+Request Body -=> {"email":"a@mail.co","password":"abcd1234","nama":"budi"}
+
+=== Request Information End ===
+
+2024-01-23 15:18:51.536 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-23 15:18:51.536 +07:00 [INF] Route matched with {action = "RegisterUser", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(familyMart.Request.RegisterEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:18:51.540 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:18:51.547 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:18:51.609 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:18:51.610 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.RegisterUser (familyMart) in 72.9092ms
+2024-01-23 15:18:51.610 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.RegisterUser (familyMart)'
+2024-01-23 15:18:51.610 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"cb4590b2-ec3f-4735-b92f-f76584a5c615","method":"POST","url":"/api/Employee/register","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:18:51.610Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"70","Postman-Token":"3ed8c61a-91a7-4e38-9e20-1cebf22f42e0"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"Data Already Exist","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:18:51.611 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/register application/json 70 - 500 - application/json;+charset=utf-8 77.0532ms
+2024-01-23 15:18:58.781 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-23 15:18:58.782 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"1daa5af0-d028-447b-97d1-2fcb210e1897","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:18:58.782Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"c9a12017-c7c3-4882-bd78-f25c5eb88f8b"}
+
+Request Body -=> {"email":"a@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:18:58.782 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:18:58.786 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:18:58.869 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:18:58.872 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:18:58.875 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:18:58.885 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 98.6284ms
+2024-01-23 15:18:58.886 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:18:58.888 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"1daa5af0-d028-447b-97d1-2fcb210e1897","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:18:58.886Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"c9a12017-c7c3-4882-bd78-f25c5eb88f8b"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data Already Send","data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM"}}
+
+=== Response Information End ===
+
+2024-01-23 15:18:58.889 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 200 - application/json;+charset=utf-8 107.6265ms
+2024-01-23 15:19:13.537 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 80
+2024-01-23 15:19:13.541 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"89270c6a-97c9-40a7-bc51-21e081309ceb","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:19:13.538Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"80","Postman-Token":"8fa19658-ad0c-4ff8-adca-4675ccae8a3d"}
+
+Request Body -=> {"id":0,"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}
+
+=== Request Information End ===
+
+2024-01-23 15:19:13.541 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:19:13.546 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.AbsenEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:19:13.620 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:19:13.634 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:19:13.640 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:19:13.660 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__tanggal_1='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Employee_id", a."Geotagging", a."Tanggal"
+FROM "Absens" AS a
+WHERE (a."Employee_id" = @__employeeId_0) AND (a."Tanggal" = @__tanggal_1)
+LIMIT 1
+2024-01-23 15:19:13.823 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Absens" ("Employee_id", "Geotagging", "Tanggal")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2024-01-23 15:19:13.883 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:19:13.891 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 344.7884ms
+2024-01-23 15:19:13.892 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:19:13.892 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"89270c6a-97c9-40a7-bc51-21e081309ceb","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:19:13.892Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"80","Postman-Token":"8fa19658-ad0c-4ff8-adca-4675ccae8a3d"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"absen":{"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}}
+
+=== Response Information End ===
+
+2024-01-23 15:19:13.892 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 80 - 200 - application/json;+charset=utf-8 354.8727ms
+2024-01-23 15:19:22.370 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37
+2024-01-23 15:19:22.371 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"0264ed0d-f2c1-4f93-9a4d-eb7113b2c9c4","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:19:22.371Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"37","Postman-Token":"b01c59c7-3da0-4133-8ffa-23c3b4b1c3f2"}
+
+Request Body -=> {"bulan":"1","tahun":"2024"}
+
+=== Request Information End ===
+
+2024-01-23 15:19:22.372 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:19:22.376 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.RekapEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:19:22.376 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:19:22.381 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:19:22.385 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:19:22.421 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@EmployeeId='?' (DbType = Int32), @TargetMonth='?' (DbType = Int32), @TargetYear='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM public.getabsenbyemployeeandmonthfunction(@EmployeeId, @TargetMonth, @TargetYear);
+2024-01-23 15:19:22.442 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:19:22.448 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 72.5705ms
+2024-01-23 15:19:22.449 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:19:22.451 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"0264ed0d-f2c1-4f93-9a4d-eb7113b2c9c4","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:19:22.449Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"37","Postman-Token":"b01c59c7-3da0-4133-8ffa-23c3b4b1c3f2"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"rekap":[{"tanggal":"2024-01-22","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-23","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-24","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-25","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-26","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}]}
+
+=== Response Information End ===
+
+2024-01-23 15:19:22.451 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37 - 200 - application/json;+charset=utf-8 81.6549ms
+2024-01-23 15:20:08.663 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37
+2024-01-23 15:20:08.665 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"a394705a-439b-4e7c-b5b2-883fe0e37def","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:20:08.665Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"37","Postman-Token":"e88d97e0-a0ba-4e79-a588-224771f50670"}
+
+Request Body -=> {"bulan":"1","tahun":"2024"}
+
+=== Request Information End ===
+
+2024-01-23 15:20:08.665 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:20:08.665 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.RekapEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:20:08.666 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:20:08.666 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:20:08.669 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:20:08.671 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@EmployeeId='?' (DbType = Int32), @TargetMonth='?' (DbType = Int32), @TargetYear='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM public.getabsenbyemployeeandmonthfunction(@EmployeeId, @TargetMonth, @TargetYear);
+2024-01-23 15:20:08.671 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:20:08.672 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 6.2321ms
+2024-01-23 15:20:08.672 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:20:08.672 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"a394705a-439b-4e7c-b5b2-883fe0e37def","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:20:08.672Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"37","Postman-Token":"e88d97e0-a0ba-4e79-a588-224771f50670"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"rekap":[{"tanggal":"2024-01-22","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-23","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-24","geotagging":"-6.176209,106.839732"}]}
+
+=== Response Information End ===
+
+2024-01-23 15:20:08.673 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37 - 200 - application/json;+charset=utf-8 9.3506ms
+2024-01-23 15:20:20.024 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37
+2024-01-23 15:20:20.025 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"00285456-4409-49cf-a0c8-5de80459755d","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:20:20.025Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"37","Postman-Token":"6b1fa60b-03f5-401a-a30a-9f37348d5221"}
+
+Request Body -=> {"bulan":"1","tahun":"2024"}
+
+=== Request Information End ===
+
+2024-01-23 15:20:20.025 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:20:20.025 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.RekapEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:20:20.026 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:20:20.027 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:20:20.029 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:20:20.031 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@EmployeeId='?' (DbType = Int32), @TargetMonth='?' (DbType = Int32), @TargetYear='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM public.getabsenbyemployeeandmonthfunction(@EmployeeId, @TargetMonth, @TargetYear);
+2024-01-23 15:20:20.032 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:20:20.032 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 6.565ms
+2024-01-23 15:20:20.032 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:20:20.033 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"00285456-4409-49cf-a0c8-5de80459755d","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:20:20.032Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"37","Postman-Token":"6b1fa60b-03f5-401a-a30a-9f37348d5221"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"rekap":[{"tanggal":"2024-01-22","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-23","geotagging":"-6.176209,106.839732"}]}
+
+=== Response Information End ===
+
+2024-01-23 15:20:20.033 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37 - 200 - application/json;+charset=utf-8 8.5055ms
+2024-01-23 15:23:43.281 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 43
+2024-01-23 15:23:43.282 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"809b54a3-679a-4b66-bb92-5b75ce594639","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:23:43.282Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"43","Postman-Token":"68a64b2c-6600-4f60-a679-2f09dab12fde"}
+
+Request Body -=> {"geotagging":"-6.176209,106.839732"}
+
+=== Request Information End ===
+
+2024-01-23 15:23:43.283 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:23:43.289 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.AbsenEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:23:43.289 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:23:43.294 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-01-23 15:23:43.300 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 10.4638ms
+2024-01-23 15:23:43.300 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:23:43.302 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"809b54a3-679a-4b66-bb92-5b75ce594639","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:23:43.300Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"43","Postman-Token":"68a64b2c-6600-4f60-a679-2f09dab12fde"}
+
+Response Body -=> {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-13dfac39fca26fdd198f56a3693dbf67-c8c8b4424360ef10-00","errors":{"Tanggal":["Email tidak boleh kosong"]}}
+
+=== Response Information End ===
+
+2024-01-23 15:23:43.303 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 43 - 400 - application/problem+json;+charset=utf-8 22.2549ms
+2024-01-23 15:23:57.007 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:23:57.102 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 94.3895ms
+2024-01-23 15:23:57.164 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui.css - -
+2024-01-23 15:23:57.176 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-01-23 15:23:57.177 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui.css - - - 200 144929 text/css 12.2390ms
+2024-01-23 15:23:57.177 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-bundle.js - -
+2024-01-23 15:23:57.194 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-standalone-preset.js - -
+2024-01-23 15:23:57.198 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-01-23 15:23:57.198 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-01-23 15:23:57.199 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 21.1920ms
+2024-01-23 15:23:57.199 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 5.1805ms
+2024-01-23 15:23:57.199 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:23:57.201 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.1156ms
+2024-01-23 15:23:57.591 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:23:57.722 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.0200ms
+2024-01-23 15:25:22.483 +07:00 [INF] Application is shutting down...
+2024-01-23 15:26:29.206 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:26:29.444 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:26:29.444 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:26:29.449 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:26:29.449 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:26:29.449 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:27:35.369 +07:00 [INF] Application is shutting down...
+2024-01-23 15:30:11.391 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:30:11.646 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:30:11.646 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:30:11.651 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:30:11.651 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:30:11.651 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:30:58.927 +07:00 [INF] Application is shutting down...
+2024-01-23 15:32:17.085 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:32:17.331 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:32:17.331 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:32:17.335 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:32:17.335 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:32:17.336 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:32:18.761 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:32:19.094 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 339.4040ms
+2024-01-23 15:32:19.164 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:32:19.167 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 3.3082ms
+2024-01-23 15:32:19.529 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:32:19.550 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:32:19.552 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 1.9749ms
+2024-01-23 15:32:19.595 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:32:19.596 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.6167ms
+2024-01-23 15:32:19.639 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:32:19.686 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.1631ms
+2024-01-23 15:32:19.687 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 47.2857ms
+2024-01-23 15:33:35.198 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:33:35.215 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 17.3188ms
+2024-01-23 15:33:35.450 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:33:35.455 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 3.8460ms
+2024-01-23 15:33:35.579 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:33:35.595 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.1199ms
+2024-01-23 15:33:38.358 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:33:38.367 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 8.9590ms
+2024-01-23 15:33:38.396 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:33:38.396 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3267ms
+2024-01-23 15:33:38.441 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:33:38.446 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.4031ms
+2024-01-23 15:34:42.614 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:34:42.624 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 9.7882ms
+2024-01-23 15:34:42.655 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:34:42.656 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.5246ms
+2024-01-23 15:34:42.710 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:34:42.713 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.0503ms
+2024-01-23 15:35:06.172 +07:00 [INF] Application is shutting down...
+2024-01-23 15:35:19.212 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:35:19.451 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:35:19.451 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:35:19.456 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:35:19.456 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:35:19.456 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:35:20.123 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:35:20.394 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 276.7384ms
+2024-01-23 15:35:20.448 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:35:20.450 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.1100ms
+2024-01-23 15:35:20.471 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:35:20.474 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 2.7648ms
+2024-01-23 15:35:20.507 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:35:20.507 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.4740ms
+2024-01-23 15:35:20.650 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:35:20.767 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.1268ms
+2024-01-23 15:37:05.641 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:37:05.652 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 11.6020ms
+2024-01-23 15:37:05.802 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:37:05.803 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.1170ms
+2024-01-23 15:37:06.128 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:37:06.146 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.4410ms
+2024-01-23 15:37:09.500 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:37:09.501 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 0.9199ms
+2024-01-23 15:37:09.532 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:37:09.532 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.5208ms
+2024-01-23 15:37:09.614 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:37:09.617 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.6731ms
+2024-01-23 15:37:12.913 +07:00 [INF] Application is shutting down...
+2024-01-23 15:37:27.043 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:37:27.316 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:37:27.316 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:37:27.320 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:37:27.320 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:37:27.321 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:37:30.733 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:37:31.006 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 278.9305ms
+2024-01-23 15:37:31.064 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:37:31.066 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.7255ms
+2024-01-23 15:37:31.208 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:37:31.332 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.0855ms
+2024-01-23 15:37:47.800 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 62
+2024-01-23 15:37:48.049 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"f0bae43d-9e9b-418c-b9b6-dc65edd82f7f","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:37:47.858Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"62","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Request Body -=> {"id":0,"tanggal":"string","geotagging":"string"}
+
+=== Request Information End ===
+
+2024-01-23 15:37:48.054 +07:00 [INF] CORS policy execution successful.
+2024-01-23 15:37:48.058 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:37:48.103 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(AbsenEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:37:48.133 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 22.6167ms
+2024-01-23 15:37:48.135 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:37:48.139 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"f0bae43d-9e9b-418c-b9b6-dc65edd82f7f","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:37:48.137Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,id;q=0.8,und;q=0.7","Content-Type":"application/json","Origin":"https://localhost:7134","Referer":"https://localhost:7134/swagger/index.html","Content-Length":"62","sec-ch-ua":"\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"macOS\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"}
+
+Response Body -=> {"code":"401","status":false,"title":"Unauthorized","message":"Token is missing or invalid.","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:37:48.139 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 62 - 401 - application/json;+charset=utf-8 339.8056ms
+2024-01-23 15:38:55.544 +07:00 [INF] Application is shutting down...
+2024-01-23 15:39:10.609 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:39:10.841 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:39:10.841 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:39:10.846 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:39:10.846 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:39:10.846 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:39:12.650 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 69
+2024-01-23 15:39:12.976 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"6a445a0b-d1c4-46fd-aeef-57c9fbec1528","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:39:12.787Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"69","Postman-Token":"d9d43fd4-5910-4130-84b0-c7b37622ff08"}
+
+Request Body -=> {"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}
+
+=== Request Information End ===
+
+2024-01-23 15:39:12.979 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:39:13.023 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(AbsenEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:39:13.121 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:39:14.355 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:39:15.017 +07:00 [INF] Executed DbCommand (96ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:39:15.126 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__tanggal_1='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Employee_id", a."Geotagging", a."Tanggal"
+FROM "Absens" AS a
+WHERE (a."Employee_id" = @__employeeId_0) AND (a."Tanggal" = @__tanggal_1)
+LIMIT 1
+2024-01-23 15:39:15.282 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Absens" ("Employee_id", "Geotagging", "Tanggal")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2024-01-23 15:39:15.354 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:39:15.421 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 2390.3723ms
+2024-01-23 15:39:15.422 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:39:15.428 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"6a445a0b-d1c4-46fd-aeef-57c9fbec1528","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:39:15.424Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"69","Postman-Token":"d9d43fd4-5910-4130-84b0-c7b37622ff08"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"absen":{"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}}
+
+=== Response Information End ===
+
+2024-01-23 15:39:15.439 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 69 - 200 - application/json;+charset=utf-8 2795.1414ms
+2024-01-23 15:39:37.541 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 69
+2024-01-23 15:39:37.544 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"69bfa26f-2c2a-4801-a556-562ecc0913b7","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:39:37.544Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"69","Postman-Token":"4c2a7d03-6885-4b36-a9ba-af842223dcf9"}
+
+Request Body -=> {"tanggal":"2024-05-11","geotagging":"-6.176209,106.839732"}
+
+=== Request Information End ===
+
+2024-01-23 15:39:37.545 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:39:37.545 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(AbsenEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:39:37.546 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:39:37.549 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:39:37.554 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:39:37.557 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__tanggal_1='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Employee_id", a."Geotagging", a."Tanggal"
+FROM "Absens" AS a
+WHERE (a."Employee_id" = @__employeeId_0) AND (a."Tanggal" = @__tanggal_1)
+LIMIT 1
+2024-01-23 15:39:37.561 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Absens" ("Employee_id", "Geotagging", "Tanggal")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2024-01-23 15:39:37.565 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:39:37.566 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 20.4356ms
+2024-01-23 15:39:37.566 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:39:37.567 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"69bfa26f-2c2a-4801-a556-562ecc0913b7","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:39:37.566Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"69","Postman-Token":"4c2a7d03-6885-4b36-a9ba-af842223dcf9"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"absen":{"tanggal":"2024-05-11","geotagging":"-6.176209,106.839732"}}
+
+=== Response Information End ===
+
+2024-01-23 15:39:37.567 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 69 - 200 - application/json;+charset=utf-8 25.8665ms
+2024-01-23 15:40:14.080 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:40:14.182 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 101.8131ms
+2024-01-23 15:40:14.213 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:40:14.216 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.3774ms
+2024-01-23 15:40:14.354 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:40:14.462 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 108.7444ms
+2024-01-23 15:41:04.394 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:41:04.402 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 8.2012ms
+2024-01-23 15:41:04.489 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:41:04.491 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.4498ms
+2024-01-23 15:41:04.639 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:41:04.647 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.7596ms
+2024-01-23 15:41:16.637 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:41:16.647 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 9.5810ms
+2024-01-23 15:41:16.686 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:41:16.686 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.3642ms
+2024-01-23 15:41:17.163 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:41:17.173 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.9319ms
+2024-01-23 15:41:19.295 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:41:19.296 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 0.7068ms
+2024-01-23 15:41:19.326 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:41:19.327 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.2783ms
+2024-01-23 15:41:19.399 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:41:19.403 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.4207ms
+2024-01-23 15:41:24.137 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:41:24.138 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 0.9438ms
+2024-01-23 15:41:24.170 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:41:24.170 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.2912ms
+2024-01-23 15:41:24.239 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:41:24.243 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.3804ms
+2024-01-23 15:41:27.688 +07:00 [INF] Application is shutting down...
+2024-01-23 15:41:40.632 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:41:40.870 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:41:40.870 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:41:40.874 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:41:40.875 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:41:40.875 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:41:41.850 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:41:42.120 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 274.9354ms
+2024-01-23 15:41:42.313 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:41:42.316 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.4824ms
+2024-01-23 15:41:42.445 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:41:42.581 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.9209ms
+2024-01-23 15:41:43.528 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:41:43.530 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 2.1667ms
+2024-01-23 15:41:43.578 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:41:43.578 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.4407ms
+2024-01-23 15:41:43.682 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:41:43.686 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.8494ms
+2024-01-23 15:42:33.529 +07:00 [INF] Application is shutting down...
+2024-01-23 15:42:47.130 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:42:47.358 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:42:47.358 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:42:47.363 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:42:47.363 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:42:47.363 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:42:50.878 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:42:51.161 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 287.7624ms
+2024-01-23 15:42:51.190 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:42:51.192 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 2.4212ms
+2024-01-23 15:42:51.301 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:42:51.432 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.0030ms
+2024-01-23 15:44:42.195 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:44:42.208 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 13.1033ms
+2024-01-23 15:44:42.431 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:44:42.433 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.3326ms
+2024-01-23 15:44:43.134 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:44:43.156 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.4992ms
+2024-01-23 15:45:37.864 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 69
+2024-01-23 15:45:38.113 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"1a730245-b39c-4ce8-82fd-67bcfee82846","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:45:37.926Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"69","Postman-Token":"c0fbd967-8a1e-4182-b91e-d3483f5f1438"}
+
+Request Body -=> {"tanggal":"2024-05-11","geotagging":"-6.176209,106.839732"}
+
+=== Request Information End ===
+
+2024-01-23 15:45:38.117 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:45:38.153 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(AbsenEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:45:38.258 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:45:39.422 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:45:40.109 +07:00 [INF] Executed DbCommand (106ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:45:40.223 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__tanggal_1='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Employee_id", a."Geotagging", a."Tanggal"
+FROM "Absens" AS a
+WHERE (a."Employee_id" = @__employeeId_0) AND (a."Tanggal" = @__tanggal_1)
+LIMIT 1
+2024-01-23 15:45:40.252 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:45:40.276 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 2115.4596ms
+2024-01-23 15:45:40.277 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:45:40.282 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"1a730245-b39c-4ce8-82fd-67bcfee82846","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:45:40.278Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"69","Postman-Token":"c0fbd967-8a1e-4182-b91e-d3483f5f1438"}
+
+Response Body -=> {"code":"500","status":false,"title":"Error","message":"You have made an absence today","data":null}
+
+=== Response Information End ===
+
+2024-01-23 15:45:40.289 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 69 - 500 - application/json;+charset=utf-8 2425.1188ms
+2024-01-23 15:45:43.176 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37
+2024-01-23 15:45:43.177 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"a9fc6300-856e-4f71-8604-7ac62e9d1ecf","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:45:43.177Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"37","Postman-Token":"41f70129-36de-4095-928a-57887fe30d7e"}
+
+Request Body -=> {"bulan":"1","tahun":"2024"}
+
+=== Request Information End ===
+
+2024-01-23 15:45:43.178 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:45:43.182 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.RekapEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:45:43.183 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:45:43.189 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:45:43.195 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:45:43.231 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@EmployeeId='?' (DbType = Int32), @TargetMonth='?' (DbType = Int32), @TargetYear='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM public.getabsenbyemployeeandmonthfunction(@EmployeeId, @TargetMonth, @TargetYear);
+2024-01-23 15:45:43.277 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:45:43.299 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 117.0361ms
+2024-01-23 15:45:43.300 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:45:43.303 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"a9fc6300-856e-4f71-8604-7ac62e9d1ecf","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:45:43.300Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"37","Postman-Token":"41f70129-36de-4095-928a-57887fe30d7e"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"rekap":[{"tanggal":"2024-01-22","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-23","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}]}
+
+=== Response Information End ===
+
+2024-01-23 15:45:43.304 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37 - 200 - application/json;+charset=utf-8 127.7539ms
+2024-01-23 15:45:44.556 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37
+2024-01-23 15:45:44.558 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"0b10dfc0-88fc-4ad2-89a2-2dab80bf384e","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:45:44.558Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"37","Postman-Token":"87f581ea-4bff-4e1c-8d61-e3883935b22d"}
+
+Request Body -=> {"bulan":"1","tahun":"2024"}
+
+=== Request Information End ===
+
+2024-01-23 15:45:44.558 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:45:44.558 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.RekapEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:45:44.559 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:45:44.637 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:45:44.640 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:45:44.643 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@EmployeeId='?' (DbType = Int32), @TargetMonth='?' (DbType = Int32), @TargetYear='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM public.getabsenbyemployeeandmonthfunction(@EmployeeId, @TargetMonth, @TargetYear);
+2024-01-23 15:45:44.644 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:45:44.644 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 85.4098ms
+2024-01-23 15:45:44.644 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:45:44.645 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"0b10dfc0-88fc-4ad2-89a2-2dab80bf384e","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:45:44.644Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"37","Postman-Token":"87f581ea-4bff-4e1c-8d61-e3883935b22d"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"rekap":[{"tanggal":"2024-01-22","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-23","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}]}
+
+=== Response Information End ===
+
+2024-01-23 15:45:44.645 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 37 - 200 - application/json;+charset=utf-8 88.8310ms
+2024-01-23 15:45:49.672 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-23 15:45:49.672 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"f57cc22e-ea33-4ca9-bf32-338d62727f92","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:45:49.672Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"936d298f-e5fe-4939-8472-44655ca26207"}
+
+Request Body -=> {"email":"a@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:45:49.673 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:45:49.676 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:45:49.685 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:45:49.690 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:45:49.710 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:45:49.711 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 34.6288ms
+2024-01-23 15:45:49.711 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:45:49.712 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"f57cc22e-ea33-4ca9-bf32-338d62727f92","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:45:49.711Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"936d298f-e5fe-4939-8472-44655ca26207"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data Already Send","data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTk1NDksImV4cCI6MTcwNjA4NTk0OSwiaWF0IjoxNzA1OTk5NTQ5fQ.hnWcN3JyoNtmLTeihsxb-mXV9ouBwoH9k_Opfid9pfA"}}
+
+=== Response Information End ===
+
+2024-01-23 15:45:49.712 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 200 - application/json;+charset=utf-8 39.9728ms
+2024-01-23 15:46:01.321 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:46:01.329 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 8.4346ms
+2024-01-23 15:46:01.380 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:46:01.381 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.6516ms
+2024-01-23 15:46:01.809 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:46:01.825 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 15.9809ms
+2024-01-23 15:47:28.966 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 38
+2024-01-23 15:47:28.968 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"5aa73adf-ff7e-4f50-a962-030c634a3b55","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:47:28.968Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"38","Postman-Token":"7344c6c4-693f-41a1-aa72-eccc7a8a4fa5"}
+
+Request Body -=> {"bulan":"01","tahun":"2024"}
+
+=== Request Information End ===
+
+2024-01-23 15:47:28.968 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:47:28.972 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.RekapEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:47:28.973 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:47:28.975 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:47:28.981 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:47:28.984 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@EmployeeId='?' (DbType = Int32), @TargetMonth='?' (DbType = Int32), @TargetYear='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM public.getabsenbyemployeeandmonthfunction(@EmployeeId, @TargetMonth, @TargetYear);
+2024-01-23 15:47:28.984 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:47:28.986 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 14.1626ms
+2024-01-23 15:47:28.987 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:47:28.987 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"5aa73adf-ff7e-4f50-a962-030c634a3b55","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:47:28.987Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTc5MzgsImV4cCI6MTcwNjA4NDMzOCwiaWF0IjoxNzA1OTk3OTM4fQ.UlT1mRIL1L7Fh89vMr5qJ18LlamOoub5SGi02sm9nyM","Content-Type":"application/json","Content-Length":"38","Postman-Token":"7344c6c4-693f-41a1-aa72-eccc7a8a4fa5"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"rekap":[{"tanggal":"2024-01-22","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-23","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-29","geotagging":"-6.176209,106.839732"}]}
+
+=== Response Information End ===
+
+2024-01-23 15:47:28.987 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 38 - 200 - application/json;+charset=utf-8 21.4119ms
+2024-01-23 15:48:04.133 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:48:04.145 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 11.7717ms
+2024-01-23 15:48:04.260 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:48:04.261 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 0.6758ms
+2024-01-23 15:48:04.854 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:48:04.876 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.3062ms
+2024-01-23 15:48:05.142 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/index.html - -
+2024-01-23 15:48:05.143 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/index.html - - - 200 - text/html;charset=utf-8 0.9189ms
+2024-01-23 15:48:05.190 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - -
+2024-01-23 15:48:05.191 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/_framework/aspnetcore-browser-refresh.js - - - 200 12328 application/javascript;+charset=utf-8 1.3665ms
+2024-01-23 15:48:05.245 +07:00 [INF] Request starting HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - -
+2024-01-23 15:48:05.251 +07:00 [INF] Request finished HTTP/1.1 GET https://localhost:7134/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.7278ms
+2024-01-23 15:48:33.662 +07:00 [INF] Application is shutting down...
+2024-01-23 15:49:44.363 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:49:44.604 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:49:44.620 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:49:44.625 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:49:44.625 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:49:44.625 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 15:50:21.322 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52
+2024-01-23 15:50:21.720 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"d43e9c66-b3c4-4f5b-a936-194a9ae269af","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:50:21.523Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"3a8ab222-9f67-4bd4-896a-d6886727a85a"}
+
+Request Body -=> {"email":"a@mail.co","password":"abcd1234"}
+
+=== Request Information End ===
+
+2024-01-23 15:50:21.723 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:50:21.762 +07:00 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(familyMart.Request.LoginEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:50:23.034 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:50:23.716 +07:00 [INF] Executed DbCommand (102ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Email" = @__email_0
+LIMIT 1
+2024-01-23 15:50:23.872 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:50:23.922 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Login (familyMart) in 2152.0444ms
+2024-01-23 15:50:23.923 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Login (familyMart)'
+2024-01-23 15:50:23.930 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"d43e9c66-b3c4-4f5b-a936-194a9ae269af","method":"POST","url":"/api/Employee/login","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:50:23.926Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Content-Type":"application/json","Content-Length":"52","Postman-Token":"3a8ab222-9f67-4bd4-896a-d6886727a85a"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Data Already Send","data":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTk4MjMsImV4cCI6MTcwNjA4NjIyMywiaWF0IjoxNzA1OTk5ODIzfQ.meid3VnuGS_dU_14iiiivzORsoiyF60B78OWmtsAIMY"}}
+
+=== Response Information End ===
+
+2024-01-23 15:50:23.940 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/login application/json 52 - 200 - application/json;+charset=utf-8 2623.5351ms
+2024-01-23 15:50:41.923 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 69
+2024-01-23 15:50:41.926 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"ffae4564-4d03-4653-b703-f5915a9d6295","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:50:41.926Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTk4MjMsImV4cCI6MTcwNjA4NjIyMywiaWF0IjoxNzA1OTk5ODIzfQ.meid3VnuGS_dU_14iiiivzORsoiyF60B78OWmtsAIMY","Content-Type":"application/json","Content-Length":"69","Postman-Token":"cd8767ae-0457-4dee-a1ee-156b1b4fc845"}
+
+Request Body -=> {"tanggal":"2024-05-11","geotagging":"-6.176209,106.839732"}
+
+=== Request Information End ===
+
+2024-01-23 15:50:41.927 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:50:41.932 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(AbsenEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:50:42.002 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:50:42.015 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:50:42.025 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:50:42.048 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__tanggal_1='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Employee_id", a."Geotagging", a."Tanggal"
+FROM "Absens" AS a
+WHERE (a."Employee_id" = @__employeeId_0) AND (a."Tanggal" = @__tanggal_1)
+LIMIT 1
+2024-01-23 15:50:42.212 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?', @p2='?' (DbType = Date)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Absens" ("Employee_id", "Geotagging", "Tanggal")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2024-01-23 15:50:42.275 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:50:42.283 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 351.6483ms
+2024-01-23 15:50:42.284 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:50:42.284 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"ffae4564-4d03-4653-b703-f5915a9d6295","method":"POST","url":"/api/Employee/absen","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:50:42.284Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTk4MjMsImV4cCI6MTcwNjA4NjIyMywiaWF0IjoxNzA1OTk5ODIzfQ.meid3VnuGS_dU_14iiiivzORsoiyF60B78OWmtsAIMY","Content-Type":"application/json","Content-Length":"69","Postman-Token":"cd8767ae-0457-4dee-a1ee-156b1b4fc845"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"absen":{"tanggal":"2024-05-11","geotagging":"-6.176209,106.839732"}}
+
+=== Response Information End ===
+
+2024-01-23 15:50:42.285 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen application/json 69 - 200 - application/json;+charset=utf-8 361.8525ms
+2024-01-23 15:50:52.076 +07:00 [INF] Request starting HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 38
+2024-01-23 15:50:52.078 +07:00 [INF] 
+=== Request Information Start ===
+
+Request Detail -=> {"request_id":"caac5f4f-bd93-4152-9cec-8dad6cf681b0","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Request Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:50:52.078Z","timezone":"Asia/Jakarta"}
+
+Request Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTk4MjMsImV4cCI6MTcwNjA4NjIyMywiaWF0IjoxNzA1OTk5ODIzfQ.meid3VnuGS_dU_14iiiivzORsoiyF60B78OWmtsAIMY","Content-Type":"application/json","Content-Length":"38","Postman-Token":"a2e4bddf-4fd4-4e69-9627-8efc6d11ca2b"}
+
+Request Body -=> {"bulan":"01","tahun":"2024"}
+
+=== Request Information End ===
+
+2024-01-23 15:50:52.079 +07:00 [INF] Executing endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:50:52.083 +07:00 [INF] Route matched with {action = "Absen", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Absen(familyMart.Request.RekapEmployeeRequest) on controller familyMart.Controllers.EmployeeController (familyMart).
+2024-01-23 15:50:52.083 +07:00 [INF] 
+Information -=> JwtAuthenticationMiddleware
+JwtPayload : System.Dynamic.ExpandoObject
+
+2024-01-23 15:50:52.165 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'BasicDatabase' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:6.0.22+7b04a420e2d10ef5ef0db6abe49a6ad53a2f8653' with options: None
+2024-01-23 15:50:52.171 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nik_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Email", e."Nama", e."Nik", e."Password"
+FROM "Employees" AS e
+WHERE e."Nik" = @__nik_0
+LIMIT 1
+2024-01-23 15:50:52.207 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@EmployeeId='?' (DbType = Int32), @TargetMonth='?' (DbType = Int32), @TargetYear='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT * FROM public.getabsenbyemployeeandmonthfunction(@EmployeeId, @TargetMonth, @TargetYear);
+2024-01-23 15:50:52.227 +07:00 [INF] Executing ObjectResult, writing value of type 'familyMart.Master.GlobalResponse'.
+2024-01-23 15:50:52.233 +07:00 [INF] Executed action familyMart.Controllers.EmployeeController.Absen (familyMart) in 150.0975ms
+2024-01-23 15:50:52.233 +07:00 [INF] Executed endpoint 'familyMart.Controllers.EmployeeController.Absen (familyMart)'
+2024-01-23 15:50:52.235 +07:00 [INF] 
+=== Response Information Start ===
+
+Response Detail -=> {"request_id":"caac5f4f-bd93-4152-9cec-8dad6cf681b0","method":"POST","url":"/api/Employee/absen/rekap","ip":"::1","message":"Response Payload","level_name":"DEBUG","channel":"development","date":"2024-01-23T08:50:52.234Z","timezone":"Asia/Jakarta"}
+
+Response Header -=> {"Accept":"*/*","Connection":"keep-alive","Host":"localhost:7134","User-Agent":"PostmanRuntime/7.36.1","Accept-Encoding":"gzip, deflate, br","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFAbWFpbC5jbyIsIk5payI6IkpEMTIzNDUiLCJuYmYiOjE3MDU5OTk4MjMsImV4cCI6MTcwNjA4NjIyMywiaWF0IjoxNzA1OTk5ODIzfQ.meid3VnuGS_dU_14iiiivzORsoiyF60B78OWmtsAIMY","Content-Type":"application/json","Content-Length":"38","Postman-Token":"a2e4bddf-4fd4-4e69-9627-8efc6d11ca2b"}
+
+Response Body -=> {"code":"00","status":true,"title":"Success","message":"Add Data on Process","data":{"rekap":[{"tanggal":"2024-01-22","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-23","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-24","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-25","geotagging":"-6.176209,106.839732"},{"tanggal":"2024-01-26","geotagging":"-6.176209,106.839732"}]}
+
+=== Response Information End ===
+
+2024-01-23 15:50:52.236 +07:00 [INF] Request finished HTTP/1.1 POST https://localhost:7134/api/Employee/absen/rekap application/json 38 - 200 - application/json;+charset=utf-8 159.2857ms
+2024-01-23 15:58:20.811 +07:00 [INF] User profile is available. Using '/Users/amb/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-01-23 15:58:21.055 +07:00 [INF] Now listening on: https://localhost:7134
+2024-01-23 15:58:21.055 +07:00 [INF] Now listening on: http://localhost:5289
+2024-01-23 15:58:21.059 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-23 15:58:21.060 +07:00 [INF] Hosting environment: Development
+2024-01-23 15:58:21.060 +07:00 [INF] Content root path: /Users/amb/Documents/code/loker/familyMart/
+2024-01-23 16:02:41.040 +07:00 [INF] Application is shutting down...

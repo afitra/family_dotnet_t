@@ -15,7 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "SiloamApi Dong", Version = "v1" });
-
+    c.EnableAnnotations();
     c.MapType<string>(() => new OpenApiSchema { Type = "string" });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

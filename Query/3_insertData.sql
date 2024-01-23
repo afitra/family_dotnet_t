@@ -1,7 +1,7 @@
 -- Insert data ke tabel "Employee" password abcd1234
 INSERT INTO "Employees" ("Nama", "Nik", "Email", "Password")
-VALUES ('John Doe', 'JD12345', 'a@mail.co', 'WfyabC4ebjGea4W0sJO9uDtkXdK8/HVvz2bz+45AgjM='),
-       ('Jane Smith', 'JS67890', 'b@mmail.co', 'WfyabC4ebjGea4W0sJO9uDtkXdK8/HVvz2bz+45AgjM=');
+VALUES ('John Doe', 'JD12345', 'a@mail.co', 'l3PNy5XMxeK6aYDHI0viKeRTi05FqUL4+ROAOadkZLE='),
+       ('Jane Smith', 'JS67890', 'b@mail.co', 'l3PNy5XMxeK6aYDHI0viKeRTi05FqUL4+ROAOadkZLE=');
 
 -- Insert data ke tabel "Absen"
 -- Karyawan 1 (John Doe)
